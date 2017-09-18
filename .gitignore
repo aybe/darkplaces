@@ -19,3 +19,17 @@ Makefile.win
 *.dll
 *.dylib
 *.dSYM
+
+# visual studio
+.vs
+*.exp
+*.ilk
+*.lib
+*.pdb
+*.user
+
+# miscellaneous
+Debug-darkplaces*/
+Release-darkplaces*/
+id1/
+
