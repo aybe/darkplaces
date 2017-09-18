@@ -134,6 +134,10 @@ cvar_t joy_x360_sensitivityup = {CVAR_SAVE, "joy_x360_sensitivityup", "1", "move
 cvar_t joy_x360_sensitivitypitch = {CVAR_SAVE, "joy_x360_sensitivitypitch", "1", "movement multiplier"};
 cvar_t joy_x360_sensitivityyaw = {CVAR_SAVE, "joy_x360_sensitivityyaw", "1", "movement multiplier"};
 cvar_t joy_x360_sensitivityroll = {CVAR_SAVE, "joy_x360_sensitivityroll", "1", "movement multiplier"};
+cvar_t joy_x360_deadzone_left = { CVAR_SAVE, "joy_x360_deadzone_left", "0.35", "left thumbstick deadzone" };
+cvar_t joy_x360_deadzone_right = { CVAR_SAVE, "joy_x360_deadzone_right", "0.35", "right thumbstick deadzone" };
+cvar_t joy_x360_response_left = { CVAR_SAVE, "joy_x360_response_left", "1.0", "left thumbstick response, 1.0 for linear, 3.0 for cubic, etc" };
+cvar_t joy_x360_response_right = { CVAR_SAVE, "joy_x360_response_right", "1.0", "right thumbstick response, 1.0 for linear, 3.0 for cubic, etc" };
 
 // cvars for DPSOFTRAST
 cvar_t vid_soft = {CVAR_SAVE, "vid_soft", "0", "enables use of the DarkPlaces Software Rasterizer rather than OpenGL or Direct3D"};
@@ -1853,6 +1857,10 @@ void VID_Shared_Init(void)
 	Cvar_RegisterVariable(&joy_x360_sensitivitypitch);
 	Cvar_RegisterVariable(&joy_x360_sensitivityyaw);
 	//Cvar_RegisterVariable(&joy_x360_sensitivityroll);
+	Cvar_RegisterVariable(&joy_x360_deadzone_left);
+	Cvar_RegisterVariable(&joy_x360_deadzone_right);
+	Cvar_RegisterVariable(&joy_x360_response_left);
+	Cvar_RegisterVariable(&joy_x360_response_right);
 
 #ifdef WIN32
 	Sys_LoadLibrary(xinputdllnames, &xinputdll_dll, xinputdllfuncs);
