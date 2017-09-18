@@ -26,6 +26,10 @@ https://github.com/aybe/darkplaces/releases
 
 [Microsoft DirectX SDK (June 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
 
+## Issues
+
+See https://github.com/aybe/darkplaces/issues.
+
 ## Changes
 
 ### Xbox 360 Controller / Xbox One Controller
