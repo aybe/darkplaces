@@ -20,16 +20,18 @@ Makefile.win
 *.dylib
 *.dSYM
 
-# visual studio
+# Visual Studio
 .vs
 *.exp
 *.ilk
+*.iobj
+*.ipdb
 *.lib
 *.pdb
 *.user
+Debug-darkplaces*/*
+Release-darkplaces*/*
 
-# miscellaneous
-Debug-darkplaces*/
-Release-darkplaces*/
+# Directories
 id1/
 
