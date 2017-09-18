@@ -3058,7 +3058,7 @@ static void M_Menu_Video_AdjustSliders (int dir)
 		Cvar_SetValueQuick (&gl_texturecompression, !gl_texturecompression.integer);
 	else if (video_cursor == t++)
 	{
-		int filter_index = TEXTURE_FILTER_INVALID;
+		size_t filter_index = TEXTURE_FILTER_INVALID;
 		
 		for (size_t i = 0; i < TEXTURE_FILTERS; i++)
 		{
