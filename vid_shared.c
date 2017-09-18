@@ -128,12 +128,12 @@ cvar_t joy_x360_deadzoneup = {0, "joy_x360_deadzoneup", "0.266", "deadzone toler
 cvar_t joy_x360_deadzonepitch = {0, "joy_x360_deadzonepitch", "0.266", "deadzone tolerance, suggested values are in the range 0 to 0.01"};
 cvar_t joy_x360_deadzoneyaw = {0, "joy_x360_deadzoneyaw", "0.266", "deadzone tolerance, suggested values are in the range 0 to 0.01"};
 cvar_t joy_x360_deadzoneroll = {0, "joy_x360_deadzoneroll", "0.266", "deadzone tolerance, suggested values are in the range 0 to 0.01"};
-cvar_t joy_x360_sensitivityforward = {0, "joy_x360_sensitivityforward", "1", "movement multiplier"};
-cvar_t joy_x360_sensitivityside = {0, "joy_x360_sensitivityside", "1", "movement multiplier"};
-cvar_t joy_x360_sensitivityup = {0, "joy_x360_sensitivityup", "1", "movement multiplier"};
-cvar_t joy_x360_sensitivitypitch = {0, "joy_x360_sensitivitypitch", "-1", "movement multiplier"};
-cvar_t joy_x360_sensitivityyaw = {0, "joy_x360_sensitivityyaw", "-1", "movement multiplier"};
-cvar_t joy_x360_sensitivityroll = {0, "joy_x360_sensitivityroll", "1", "movement multiplier"};
+cvar_t joy_x360_sensitivityforward = {CVAR_SAVE, "joy_x360_sensitivityforward", "1", "movement multiplier"};
+cvar_t joy_x360_sensitivityside = {CVAR_SAVE, "joy_x360_sensitivityside", "1", "movement multiplier"};
+cvar_t joy_x360_sensitivityup = {CVAR_SAVE, "joy_x360_sensitivityup", "1", "movement multiplier"};
+cvar_t joy_x360_sensitivitypitch = {CVAR_SAVE, "joy_x360_sensitivitypitch", "-1", "movement multiplier"};
+cvar_t joy_x360_sensitivityyaw = {CVAR_SAVE, "joy_x360_sensitivityyaw", "-1", "movement multiplier"};
+cvar_t joy_x360_sensitivityroll = {CVAR_SAVE, "joy_x360_sensitivityroll", "1", "movement multiplier"};
 
 // cvars for DPSOFTRAST
 cvar_t vid_soft = {CVAR_SAVE, "vid_soft", "0", "enables use of the DarkPlaces Software Rasterizer rather than OpenGL or Direct3D"};
