@@ -1,0 +1,2916 @@
+From: <Saved by Blink>
+Subject: LordHavoc's DarkPlaces Quake Modification
+Date: Tue, 18 Sep 2017 17:01:34 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl----"
+
+------MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl----
+Content-Type: text/html
+Content-ID: <frame-661-6aab1163-bb98-4b91-83c4-646691e7e5c3@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://icculus.org/twilight/darkplaces/readme.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict=
+.dtd"><html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; c=
+harset=3Dwindows-1252">
+  =20
+   <meta name=3D"Author" content=3D"Forest Hale">
+   <title>LordHavoc's DarkPlaces Quake Modification</title>
+
+    <link rel=3D"stylesheet" href=3D"https://icculus.org/twilight/darkplace=
+s/style.css" type=3D"text/css">
+</head>
+
+<body>
+
+<h1>
+  <a href=3D"https://icculus.org/twilight/darkplaces/index.html">About/News=
+</a>&nbsp;
+  ReadMe&nbsp;
+  <a href=3D"https://icculus.org/twilight/darkplaces/download.html">Downloa=
+d</a>&nbsp;
+  <a href=3D"https://icculus.org/twilight/darkplaces/screenshots.html">Scre=
+enshots</a>&nbsp;
+  <a href=3D"https://icculus.org/twilight/darkplaces/technotes.html">Tech N=
+otes</a>&nbsp;
+  <a href=3D"https://icculus.org/twilight/darkplaces/email.html">Email</a>&=
+nbsp;
+  <a href=3D"http://icculus.org/">                <img src=3D"http://www.ic=
+culus.org/icculus-org.png" alt=3D"icculus" height=3D"31" width=3D"88"></a>
+  <a href=3D"http://validator.w3.org/check?uri=3Dreferer"><img src=3D"http:=
+//www.w3.org/Icons/valid-xhtml10" alt=3D"Valid XHTML 1.0!" height=3D"31" wi=
+dth=3D"88"></a>
+  <a href=3D"http://jigsaw.w3.org/css-validator/"><img src=3D"http://jigsaw=
+.w3.org/css-validator/images/vcss" alt=3D"Valid CSS!" height=3D"31" width=
+=3D"88"></a>
+  <a href=3D"http://wikimediafoundation.org/wiki/Support_Wikipedia/en"><img=
+ border=3D"0" alt=3D"Wikipedia Affiliate Button" src=3D"http://wikimediafou=
+ndation.org/w/extensions/skins/Donate/images/banners/Banner_88x31_0001_B.jp=
+g"></a>
+</h1>
+
+<h2>DarkPlaces engine readme : updated 20070707</h2>
+
+<h2>About the DarkPlaces glquake engine</h2>
+<p>DarkPlaces engine was started because I was unsatisfied with the other e=
+ngines available soon after the quake source release (which did little more=
+ than add some flashy effects), and craved modding features for my DarkPlac=
+es mod, and wanted some real enhancements to the online gaming experience a=
+s well.</p>
+
+<p>DarkPlaces engine is the result, I hope everyone likes it.</p>
+
+<p>I am not very good at writing documentation, so this readme is organized=
+ as a feature list, with information on each feature, I hope it is still ad=
+equate documentation.</p>
+
+<p>If you have any suggestions for features to document in detail in the re=
+adme or any other questions/comments/bugreports/suggestions/etc, send me an=
+ email with the address darkplacesengine gmail com (add @ and . characters =
+as appropriate)</p>
+
+<h2>Index</h2>
+<ul>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#InputTip=
+s">Tips on input issues with windows</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#Graphics=
+Tips">Tips on graphics settings</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#Networki=
+ngTips">Tips on network settings</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#Supporte=
+dGames">List of supported games</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#Graphics=
+Features">Graphics features</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#SoundFea=
+tures">Sound features</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ClientFe=
+atures">Client features</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ServerFe=
+atures">Server features</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ModdingF=
+eatures">Modding features</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#Replacin=
+gContent">Replacing content</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#Commandl=
+ineOptions">Commandline options</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ConsoleV=
+ariables">Console variables</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ConsoleC=
+ommands">Console commands</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ConsoleF=
+eatures">Console features</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#HowToIns=
+tallQuake_Windows">How to install Quake On Windows</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#HowToIns=
+tallQuake_Linux">How to install Quake On Linux</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#HowToIns=
+tallQuake_MacOSX">How to install Quake On Mac OS X</a></li>
+<li><a href=3D"https://icculus.org/twilight/darkplaces/readme.html#ThanksTo=
+">Thanks to contributors</a></li>
+</ul>
+
+
+
+<a name=3D"InputTips"></a>
+<h2>Input Tips</h2>
+<p>If mouse movement is jerky but framerate is high, try typing "gl_finish =
+1" (without quotes) into the console (makes cpu wait for gpu before ending =
+frame, which gives lousy input drivers a chance to catch up).</p>
+
+
+
+<a name=3D"GraphicsTips"></a>
+<h2>Graphics Tips</h2>
+<p>Visit the Color Control submenu of Options, it's near the top, fiddle wi=
+th gamma (or grey level if using the color levels mode) until the grey box =
+surrounding the white/black dither pattern matches up with the grey you see=
+ while looking at the dither from a distance, this will calibrate quake to =
+look approximately as id Software intended, and ensure everyone sees it the=
+ same. Note: Different resolutions may be different intensities depending o=
+n monitor. Note2: ATI Radeon Catalyst 3.10 drivers seem to have a weird gam=
+ma limiting 'feature' which rejects gamma settings it doesn't like, feel fr=
+ee to complain to ATI about this if it gets in your way (it probably will).=
+</p>
+
+<p>Visit the Effects Options submenu of Options, and check out the options.=
+</p>
+
+
+
+<a name=3D"NetworkingTips"></a>
+<h2>Networking tips</h2>
+<p>Visit the Player Setup submenu of the Multiplayer menu to configure your=
+ network speed (as well as the usual settings from quake like name and colo=
+rs).</p>
+
+<p>To host a server behind a router/firewall, simply set up a port forward =
+on the UDP port you are running the server on (default is 26000), to forwar=
+d incoming UDP packets on that port to the server, then people can connect.=
+</p>
+
+<p>To make your server show up on the server browser (in the Join Game menu=
+), either set sv_public 1 in the console, or use the multiplayer new game m=
+enu and check the Public server checkbox.</p>
+
+
+
+<a name=3D"SupportedGames"></a>
+<h2>Supported games</h2>
+<ul>
+<li>Quake : -quake, this is active by default, gamedirs: id1</li>
+<li>Quake: Scourge of Armagon : -hipnotic or hipnotic in executable name or=
+ path, gamedirs: hipnotic, id1</li>
+<li>Quake: Dissolution of Eternity : -rogue or rogue in executable name or =
+path, gamedirs: rogue, id1</li>
+<li>Nexuiz : -nexuiz or nexuiz in executable name or path, gamedirs: data</=
+li>
+<li>Nehahra : -nehahra or nehahra in executable name or path, gamedirs: neh=
+ahra, id1</li>
+<li>GoodVsBad2 : -goodvsbad2 or gvb2 in executable name or path, gamedirs: =
+rts</li>
+<li>BattleMech : -battlemech or battlemech in executable name or path, game=
+dirs: base</li>
+<li>PrydonGate : -prydon or prydon in executable name or path, gamedirs: pr=
+ydon</li>
+</ul>
+<p>These games are considered officially supported, if any problems are see=
+n, please make sure you are running the latest version of the game and engi=
+ne, if you are, please report the problem.</p>
+
+
+
+<a name=3D"GraphicsFeatures"></a>
+<h2>Graphics features</h2>
+<ul>
+<li>Redesigned effects including smoke, blood, bubbles and explosions.</li>
+<li>Better looking dynamic lights.</li>
+<li>External texture support (see Replacement Content section below)</li>
+<li>Realtime bumpmapped lighting/shadowing support (r_shadow_realtime_world=
+ cvar) with many options.  (note: very slow if you do not have .rtlights fi=
+les installed, be sure to get some from dpmod or search on the web for rtli=
+ghts files)</li>
+<li>.rtlights file support (improves performance/appearance of realtime lig=
+hting)</li>
+<li>.rtlights file editing (see r_editlights_help in game)</li>
+<li>Alpha blended sprites (instead of glquake's masked sprites).</li>
+<li>Interpolated entity movement and animations (both models and sprites).<=
+/li>
+<li>Overbright and fullbright support on walls and models (like winquake).<=
+/li>
+<li>Colormapping support on any q1 model (like winquake).</li>
+<li>Fog (set with "fog density red green blue" command)</li>
+<li>Skybox (loadsky "mtnsun_" will load "env/mtnsun_ft.tga" and so on).</li=
+>
+<li>Sky rendering improved (no more glquake distortion).</li>
+<li>Sky polygons obscure geometry just like in winquake.</li>
+<li>Color calibration menu to ensure a proper Quake experience.</li>
+<li>Improved model lighting (directional shading).</li>
+<li>No messy .ms2 model mesh files (no glquake dir anymore either).</li>
+<li>New improved crosshair (team color coded).</li>
+<li>Improved image loading (smoother menus and such).</li>
+<li>Ability to disable particle effects (cl_particles* cvars).</li>
+<li>Decals (cl_decals cvar to enable).</li>
+<li>Stainmaps (cl_stainmap cvar to enable).</li>
+<li>Sorted transparent stuff to render better.</li>
+<li>Improved multitexture support (r_textureunits (1-4 supported), needs gl=
+_combine 1 because of overbright)</li>
+<li>Improved chase cam (chase_active 1 no longer goes into walls)</li>
+<li>More configurable console background (scr_conalpha and scr_conbrightnes=
+s)</li>
+<li>Optional fullbrights (r_fullbrights 0/1 followed by r_restart)</li>
+<li>Dynamic Farclip (no distance limits in huge maps)</li>
+<li>Improved gl_flashblend (now renders a corona instead of an ugly blob)</=
+li>
+<li>DynamicLight coronas (more realism)</li>
+<li>Transparent statusbar (sbar_alpha) that does not block your view as muc=
+h.</li>
+<li>No 8bit texture uploads (fixes 'green' walls in the distance).</li>
+<li>Fixed view blends (glquake was quite broken).</li>
+<li>JPEG texture support using libjpeg (Thanks Elric)</li>
+<li>Video Options, Color Control, and Effects Options menus added, and more=
+ options.</li>
+<li>.dlit file support (produced by hmap2 -light) for fast per-pixel lighti=
+ng without shadowing.</li>
+<li>pointfile command is improved (for leak finding in maps when you have a=
+ .pnt file from a failed qbsp compile)</li>
+<li>configurable particle effects (effectinfo.txt, can be reloaded at any t=
+ime by cl_particles_reloadeffects command for quick testing)</li>
+<li>fixed envmap command (makes a skybox of the current scene)</li>
+</ul>
+
+
+
+<a name=3D"SoundFeatures"></a>
+<h2>Sound features</h2>
+<ul>
+<li>Ogg and wav file overrides for cd tracks (example: id1/sound/cdtracks/t=
+rack002.ogg or .wav) (Thanks Elric)</li>
+<li>Streaming ogg sounds to save memory (Ogg sounds over a certain size are=
+ streamed automatically) (Thanks Elric)</li>
+<li>Ogg Vorbis sound support (all .wav sounds look for .ogg if the .wav is =
+missing, useful for making mods smaller, particularly useful for cd tracks)=
+ (Thanks Elric)</li>
+<li>Stereo sound file support (useful for cd tracks)</li>
+<li>7.1 surround sound mixing support (snd_channels cvar selects how many t=
+o use, default 2 for stereo)</li>
+</ul>
+
+
+
+<a name=3D"ClientFeatures"></a>
+<h2>Client features</h2>
+<ul>
+<li>showtime cvar.</li>
+<li>showdate cvar.</li>
+<li>-benchmark option to run automated timedemo benchmarks (-benchmark demo=
+1 does +timedemo demo1 and quits immediately when finished)</li>
+<li>timedemo automatically puts results in gamedir/benchmark.log</li>
+<li>Slightly improved aiming on quake servers (does not support proquake ai=
+ming).</li>
+<li>-sndspeed samplerate (default: 44100, quake used 11025)</li>
+<li>snd_swapstereo cvar (for people with backwards SB16 sound cards)</li>
+<li>Saves video settings to config and restores them properly</li>
+<li>Ability to change video settings during game (video options menu or vid=
+_* cvars)</li>
+<li>showfps cvar.</li>
+<li>Sends 20fps network packets to improve modem play instead of one per fr=
+ame. (sys_ticrate controls network framerate)</li>
+<li>Allow skin colormaps 14 and 15 (freaky :)</li>
+<li>Longer chat messages.</li>
+<li>No more 72fps limit, cl_maxfps lets you decide.</li>
+<li>Support for more mouse buttons (mouse1-mouse16, mwheelup/mwheeldown are=
+ aliases to mouse4 and mouse5).</li>
+<li>Server browser for public (sv_public 1) darkplaces servers as well as q=
+uakeworld servers.</li>
+<li>log_file cvar to log console messages to a file.</li>
+<li>condump command to dump recent console history to a file.</li>
+<li>PK3 archive support with compression support using zlib (Thanks Elric)<=
+/li>
+<li>maps command lists installed maps</li>
+<li>tab completion of map names on map/changelevel commands</li>
+<li>tab completion of rcon commands</li>
+<li>.ent file replacement allows you to modify sky and fog settings on a pe=
+r-map basis (use sv_saveentfile command in singleplayer and then edit the w=
+orldspawn entity in a text editor, for example setting "sky" "mtnsun_" to l=
+oad the skybox mtnsun_ in your favorite maps, or "fog" "0.03 0.2 0.2 0.2" t=
+o put fog in the level)</li>
+<li>Switchable bindmaps (in_bind command allows you to bind keys in one of =
+8 bindmaps, 0-7, in_bindmap command allows you to select two active bindmap=
+s to use at once, ones missing in the first are checked in the second)</li>
+<li>Options menu "Reset to Defaults" option works better than in Quake</li>
+<li>cvarlist and cmdlist commands</li>
+<li>improved tab completion of commands and cvars, with default value and d=
+escription listed</li>
+<li>curl command (downloads a URL to a pk3 archive and loads it)</li>
+<li>fs_rescan command (allows you to load a newly installed pak/pk3 archive=
+ without quitting the game)</li>
+<li>saveconfig command (allows you to save settings before quitting the gam=
+e, mostly useful when debugging the engine if you expect it to crash)</li>
+<li>gamedir command to change current mod (only works while disconnected).<=
+/li>
+<li>QuakeWorld support.</li>
+<li>ProQuake message macros (%l location, %d last death location, %h health=
+, %a armor, %x rockets, %c cells, %t current time, %r rocket launcher statu=
+s (I need RL, I need rockets, I have RL), %p powerup status (quad pent ring=
+), %w weapon status (SSG:NG:SNG:GL:RL:LG).</li>
+<li>Support for ProQuake .loc files (locs/e1m1.loc or maps/e1m1.loc)</li>
+<li>Support for QIZMO .loc files (maps/e1m1.loc)</li>
+<li>Ingame editing of .loc files using locs_* commands (locs_save saves a n=
+ew .loc file to maps directory)</li>
+<li>bestweapon command (takes a number sequence like bestweapon 87654321, d=
+igits corresponding to weapons, first ones are preferred over last ones, on=
+ly uses weapons that have 1 ammo or more)</li>
+<li>ls and dir commands to list files in the Quake virtual filesystem (usef=
+ul to find files inside paks)</li>
+<li>toggle command allows you to use a single bind to toggle a cvar between=
+ 0 and 1</li>
+<li>slowmo cvar allows you to pause/slow down/speed up demo playback (try u=
+sing these binds for example: bind f1 "slowmo 0";bind f2 "slowmo 0.1";bind =
+f3 "slowmo 1")</li>
+<li>AVI video recording using builtin I420 codec (bind f4 "toggle cl_captur=
+evideo"), with automatic creation of sequentially numbered avi files for ea=
+ch recording session.  (WARNING: HUGE files, make sure you have several gig=
+abytes of disk space available!  and it is only recommended during demo pla=
+yback!  You will probably want to reencode these videos using VirtualDub, m=
+encoder, or other utilities before posting them on a website)</li>
+<li>ping display in scoreboard, even on Quake servers (on DarkPlaces server=
+s it also shows packet loss)</li>
+</ul>
+
+
+
+<a name=3D"ServerFeatures"></a>
+<h2>Server features</h2>
+<ul>
+<li>Allows clients to connect through firewalls (automatic feature)</li>
+<li>Works behind firewalls unlike NetQuake (must port forward UDP packets o=
+n the relevant port from the firewall to the server, as with any game)</li>
+<li>More accurate movement and precise aiming.</li>
+<li>255 player support.</li>
+<li>sv_cheats cvar controls cheats (no longer based on deathmatch).</li>
+<li>slowmo cvar controls game speed.</li>
+<li>No crash with the buggy 'teleport train' in shub's pit.</li>
+<li>Allow skin colormaps 14 and 15 (freaky :)</li>
+<li>sys_ticrate applies to listen (client) servers as well as dedicated.</l=
+i>
+<li>sv_public cvar to advertise to master server.</li>
+<li>log_file cvar to log console messages to a file.</li>
+<li>condump command to dump recent console history to a file.</li>
+<li>PK3 archive support with compression support using zlib (Thanks Elric)<=
+/li>
+<li>Option to prevent wallhacks from working (sv_cullentities_trace 1).</li=
+>
+<li>Selectable protocol (sv_protocolname QUAKE for example allows quake cli=
+ents to play, default is sv_protocolname DP7 or a later protocol)</li>
+<li>Automatic file downloads to DarkPlaces clients.</li>
+<li>Ability to send URLs to DarkPlaces clients to download pk3 archives nee=
+ded to play on this server.</li>
+<li>rcon support for remote administration by trusted clients with matching=
+ rcon_password, or external quakeworld rcon tools</li>
+<li>prvm_edictset, prvm_global, prvm_globals, and prvm_globalset commands a=
+id in QuakeC debugging</li>
+<li>prvm_printfunction function prints out the QuakeC assembly opcodes of a=
+ function, can be useful if you can't decompile the progs.dat file</li>
+<li>prvm_profile command gives call count and estimated builtin-function co=
+st</li>
+<li>sys_colortranslation cvar controls processing of Quake3-style ^ color c=
+odes in terminal output, default is white text on windows and ANSI color ou=
+tput on Linux/Mac OSX</li>
+<li>sys_specialcharactertranslation controls processing of special Quake ch=
+aracters to make colored names more readable in terminal output</li>
+</ul>
+
+
+
+<a name=3D"ModdingFeatures"></a>
+<h2>Modding features</h2>
+<ul>
+<li>HalfLife map support (place your HalfLife wads in quake/id1/textures/ o=
+r quake/MODDIR/textures/ as the maps need them)</li>
+<li>Larger q1 and hl map size of +-32768 units.</li>
+<li>Colored lighting (.lit support) for q1 maps.</li>
+<li>Q3 map support (no shaders though), with no limits.</li>
+<li>Q2 and Q3 model support, with greatly increased limits (256 skins, 6553=
+6 frames, 65536 vertices, 65536 triangles).  (Note: md2 player models are n=
+ot supported because they have no skin list)</li>
+<li>Optimized QuakeC interpreter so mods run faster.</li>
+<li>Bounds checking QuakeC interpreter so mods can't do naughty things with=
+ memory.</li>
+<li>Warnings for many common QuakeC errors.</li>
+<li>Unprecached models are now a warning (does not kill the server anymore)=
+.</li>
+<li>External texture support (see dpextensions.qc DP_GFX_EXTERNALTEXTURES).=
+</li>
+<li>Fog ("fog" key in worldspawn, same parameters as fog command).</li>
+<li>.spr32 and halflife .spr sprites supported.  (Use Krimzon's tool to mak=
+e spr32, and lhfire can render directly to spr32, or just use replacement t=
+extures on .spr).</li>
+<li>Skybox ("sky" key in worldspawn, works like loadsky and quake2).</li>
+<li>Stereo wav sounds supported.</li>
+<li>Ogg Vorbis sounds supported. (Thanks Elric)</li>
+<li>ATTN_NONE sounds are no longer directional (good for music).</li>
+<li>play2 sound testing command (ATTN_NONE variant of play).</li>
+<li>r_texturestats and memstats and memlist commands to give memory use inf=
+o.</li>
+<li>Lighting on sprites (put ! anywhere in sprite filename to enable).</li>
+<li>More r_speeds info (now a transparent overlay instead of spewing to con=
+sole).</li>
+<li>Supports rotating bmodels (use avelocity, and keep in mind the bmodel n=
+eeds the "origin" key set to rotate (read up on hipnotic rotation support i=
+n your qbsp docs, or choose another qbsp if yours does not support this fea=
+ture), or in q3 maps an origin brush works).</li>
+<li>More sound channels.</li>
+<li>More dynamic lights (32 changed to 256).</li>
+<li>More precached models and sounds (256 changed to 4096).</li>
+<li>Many more features documented in dpextensions.qc. (bullet tracing on mo=
+dels, qc player input, etc)</li>
+</ul>
+
+
+
+<a name=3D"ReplacingContent"></a>
+<h2>Replacing Content</h2>
+<p>Formats supported: tga (recommended), png (loads very slowly), jpg (load=
+s slowly), pcx, wal, lmp</p>
+
+<p>Usually you want to put replacement content in either id1/ or another di=
+rectory such as pretty/ inside your quake directory, in DarkPlaces you can =
+run multiple -game options at once (such as -game ctf -game pretty -game dp=
+mod to have texture overrides from pretty, maps from ctf, and gameplay from=
+ dpmod) or multiple gamedirs specified with the gamedir console command (ga=
+medir ctf pretty dpmod).</p>
+
+<p>All texture layers are optional except diffuse (the others are NOT loade=
+d without it)</p>
+
+<h3>Replacing skins</h3>
+<ul>
+<li>progs/player.mdl_0.tga - diffuse</li>
+<li>progs/player.mdl_0_norm.tga - normalmap (can have alpha channel with bu=
+mpmap height for offsetmapping/reliefmapping)</li>
+<li>progs/player.mdl_0_bump.tga - bumpmap (not loaded if normalmap is prese=
+nt)</li>
+<li>progs/player.mdl_0_gloss.tga - gloss map, also known as specular color =
+map (the color of reflected light)</li>
+<li>progs/player.mdl_0_glow.tga - glow map (use _luma if tenebrae compatibi=
+lity is a concern)</li>
+<li>progs/player.mdl_0_luma.tga - alternate tenebrae-compatible name for gl=
+ow map (use one or the other)</li>
+<li>progs/player.mdl_0_pants.tga - pants image, greyscale and does not cove=
+r the same pixels as the diffuse texture (this is additive blended ('Screen=
+' mode in photoshop) ontop of the diffuse texture with a color tint accordi=
+ng to your pants color), make sure you have black pixels in the diffuse ima=
+ge otherwise you get 'ghosting' (washed out and too bright because both lay=
+ers are being combined on these pixels)</li>
+<li>progs/player.mdl_0_shirt.tga - shirt image, same type as pants</li>
+</ul>
+
+<h3>Replacing textures in specific maps</h3>
+<ul>
+<li>textures/e1m1/ecop1_6.tga</li>
+<li>textures/e1m1/ecop1_6_norm.tga</li>
+<li>textures/e1m1/ecop1_6_bump.tga</li>
+<li>textures/e1m1/ecop1_6_gloss.tga</li>
+<li>textures/e1m1/ecop1_6_glow.tga</li>
+<li>textures/e1m1/ecop1_6_luma.tga</li>
+<li>textures/e1m1/ecop1_6_pants.tga - pants and shirt layers are possible o=
+n bmodel entities with quakec modifications to set their .colormap field</l=
+i>
+<li>textures/e1m1/ecop1_6_shirt.tga</li>
+</ul>
+
+<h3>Replacing textures in all maps</h3>
+<ul>
+<li>textures/quake.tga</li>
+<li>textures/quake_norm.tga</li>
+<li>textures/quake_bump.tga</li>
+<li>textures/quake_gloss.tga</li>
+<li>textures/quake_glow.tga</li>
+<li>textures/quake_luma.tga</li>
+<li>textures/quake_pants.tga</li>
+<li>textures/quake_shirt.tga</li>
+</ul>
+
+<h3>Replacing hud and menu pictures</h3>
+<ul>
+<li>gfx/conchars.tga</li>
+</ul>
+
+<h3>Replacing models</h3>
+<p>same as in Quake, you can replace a model with exactly the same file nam=
+e (including file extension), so for example an md3 player model has to be =
+renamed progs/player.mdl, and a small box of shells in md3 format has to be=
+ renamed maps/b_shell0.bsp</p>
+
+<h3>How to make .skin files for multiple skins on a Quake3 (md3) or DarkPla=
+cesModel (dpm) model</h3>
+<p>These files use the same format as the ones in Quake3 (except being name=
+d modelname_0.skin, modelname_1.skin, and so on), they specify what texture=
+ to use on each part of the md3 (or zym or dpm or psk) model, their content=
+s look like the following...</p>
+<table>
+<tbody><tr><td><code>torso,progs/player_default.tga</code></td><td>says tha=
+t the model part named "torso" should use the image progs/player_default.tg=
+a</td></tr>
+<tr><td><code>gun,progs/player_default.tga</code></td><td>says that the mod=
+el part named "gun" should use the image progs/player_default.tga</td></tr>
+<tr><td><code>muzzleflash,progs/player_default_muzzleflash.tga</code></td><=
+td>says that the model part named "muzzleflash" should use the image progs/=
+player_default_muzzleflash.tga - this is useful for transparent skin areas =
+which should be kept separate from opaque skins</td></tr>
+<tr><td><code>tag_head,</code></td><td>says that the first tag is named "ta=
+g_head" - this is only useful for QuakeC mods using segmented player models=
+ so that they can look up/down without their legs rotating, don't worry abo=
+ut it as a user</td></tr>
+<tr><td><code>tag_torso,</code></td><td>second tag name</td></tr>
+<tr><td><code>tag_weapon,</code></td><td>third tag name</td></tr>
+</tbody></table>
+
+<h3>How to install a soundtrack in ogg format</h3>
+<p>These files must be in ogg or wav format, and numbers begin at 002 if yo=
+u wish to replace (or install) the Quake cd music - since track 001 was the=
+ Quake data track.</p>
+<table>
+<tbody><tr><td>quake/id1/sound/cdtracks/track002.ogg</td><td>replacement tr=
+ack for "cd loop 2"</td></tr>
+<tr><td>quake/id1/sound/cdtracks/track003.ogg</td><td>replacement track for=
+ "cd loop 3"</td></tr>
+</tbody></table>
+
+<h3>Example list of filenames</h3>
+<table>
+<tbody><tr><td>quake/id1/progs/player.mdl</td><td>replaces the player model=
+)</td></tr>
+<tr><td>quake/id1/progs/player.mdl_0.skin</td><td>text file that specifies =
+textures to use on an md3 model)</td></tr>
+<tr><td>quake/id1/progs/player_default.tga</td><td>texture referenced by th=
+e .skin, make sure that any special parts of this are black, like pants sho=
+uld be black here otherwise you get pink pants when you use a red color ing=
+ame)</td></tr>
+<tr><td>quake/id1/progs/player_default_pants.tga</td><td>white pants area o=
+f the skin, this is colored by the engine according to your color settings,=
+ additive blended (which is called "Screen" mode in Photoshop if you wish t=
+o preview the layers))</td></tr>
+<tr><td>quake/id1/progs/player_default_shirt.tga</td><td>white shirt area o=
+f the skin, similar to pants described above)</td></tr>
+<tr><td>quake/id1/progs/player_default_norm.tga</td><td>normalmap texture f=
+or player_default, alpha channel can contain a heightmap for offsetmapping =
+(r_glsl_offsetmapping 1 in console) to use, alternatively you can use _bump=
+.tga instead of this which is only a heightmap and the engine will generate=
+ the normalmap for you)</td></tr>
+<tr><td>quake/id1/progs/player_default_gloss.tga</td><td>glossmap (shiny ar=
+eas) for player_default)</td></tr>
+<tr><td>quake/id1/progs/player_default_glow.tga</td><td>glowmap (glowing st=
+uff) for player_default, this is fullbrights and such, be sure the correspo=
+nding pixels are black in the player_default.tga, because just like pants/s=
+hirt this is additive blended)</td></tr>
+<tr><td>quake/id1/textures/quake.tga</td><td>replaces the quake logo on the=
+ arch in start.bsp)</td></tr>
+<tr><td>quake/id1/textures/quake_norm.tga</td><td>same as for a player)</td=
+></tr>
+<tr><td>quake/id1/textures/quake_gloss.tga</td><td>same as for a player)</t=
+d></tr>
+<tr><td>quake/id1/textures/#water1.tga</td><td>replaces *water1 texture in =
+the maps, # is used instead of * in filenames)</td></tr>
+<tr><td>quake/id1/gfx/conchars.tga</td><td>replacement font image, this was=
+ in gfx.wad in quake)</td></tr>
+<tr><td>quake/id1/gfx/conback.tga</td><td>replacement console background, j=
+ust like in quake)</td></tr>
+<tr><td>quake/id1/gfx/mainmenu.tga</td><td>replacement main menu image, jus=
+t like in quake)</td></tr>
+<tr><td>quake/id1/maps/b_bh25.bsp</td><td>replacement for normal health pac=
+k, for example this could be an md3 model instead)</td></tr>
+<tr><td>quake/id1/sound/cdtracks/track002.ogg</td><td>replacement track for=
+ "cd loop 2"</td></tr>
+<tr><td>quake/id1/sound/cdtracks/track003.ogg</td><td>replacement track for=
+ "cd loop 3"</td></tr>
+</tbody></table>
+
+
+
+<a name=3D"CommandlineOptions"></a>
+<h2>Commandline options as of 2007-03-11</h2>
+<ul>
+<li>BSD GLX: -gl_driver drivername selects a GL driver library, default is =
+libGL.so.1, useful only for using fxmesa or similar, if you don't know what=
+ this is for, you don't need it</li>
+<li>BSD GLX: -nogetprocaddress disables GLX_ARB_get_proc_address (not requi=
+red, more formal method of getting extension functions)</li>
+<li>BSD GLX: -novideosync disables GLX_SGI_swap_control</li>
+<li>BSD Sound: -cddev devicepath chooses which CD drive to use</li>
+<li>Client: -benchmark demoname runs a timedemo and quits, results of any t=
+imedemo can be found in gamedir/benchmark.log (for example id1/benchmark.lo=
+g)</li>
+<li>Client: -demo demoname runs a playdemo and quits</li>
+<li>Client: -forceqmenu disables menu.dat (same as +forceqmenu 1)</li>
+<li>Client: -particles number changes maximum number of particles at once, =
+default 32768</li>
+<li>Client: -texbrightness number sets the quake palette brightness (bright=
+ness of black), allowing you to make quake textures brighter/darker, not re=
+commended</li>
+<li>Client: -texcontrast number sets the quake palette contrast, allowing y=
+ou to make quake textures brighter/darker, not recommended</li>
+<li>Client: -texgamma number sets the quake palette gamma, allowing you to =
+make quake textures brighter/darker, not recommended</li>
+<li>Client: -useqmenu causes the first time you open the menu to use the qu=
+ake menu, then reverts to menu.dat (if forceqmenu is 0)</li>
+<li>Console: -condebug logs console messages to qconsole.log, see also log_=
+file</li>
+<li>Console: -developer enables warnings and other notices (RECOMMENDED for=
+ mod developers)</li>
+<li>Console: -nostdout disables text output to the terminal the game was la=
+unched from</li>
+<li>Filesystem: -basedir path chooses what base directory the game data is =
+in, inside this there should be a data directory for the game (for example =
+id1)</li>
+<li>GL: -noanisotropy disables GL_EXT_texture_filter_anisotropic (allows hi=
+gher quality texturing)</li>
+<li>GL: -nocombine disables GL_ARB_texture_env_combine or GL_EXT_texture_en=
+v_combine (required for bumpmapping and faster map rendering)</li>
+<li>GL: -nocubemap disables GL_ARB_texture_cube_map (required for bumpmappi=
+ng)</li>
+<li>GL: -nocva disables GL_EXT_compiled_vertex_array (renders faster)</li>
+<li>GL: -nodot3 disables GL_ARB_texture_env_dot3 (required for bumpmapping)=
+</li>
+<li>GL: -nodrawrangeelements disables GL_EXT_draw_range_elements (renders f=
+aster)</li>
+<li>GL: -noedgeclamp disables GL_EXT_texture_edge_clamp or GL_SGIS_texture_=
+edge_clamp (recommended, some cards do not support the other texture clamp =
+method)</li>
+<li>GL: -nofragmentshader disables GL_ARB_fragment_shader (allows pixel sha=
+der effects, can improve per pixel lighting performance and capabilities)</=
+li>
+<li>GL: -nomtex disables GL_ARB_multitexture (required for faster map rende=
+ring)</li>
+<li>GL: -noseparatestencil disables use of OpenGL2.0 glStencilOpSeparate an=
+d GL_ATI_separate_stencil extensions (which accelerate shadow rendering)</l=
+i>
+<li>GL: -noshaderobjects disables GL_ARB_shader_objects (required for verte=
+x shader and fragment shader)</li>
+<li>GL: -noshadinglanguage100 disables GL_ARB_shading_language_100 (require=
+d for vertex shader and fragment shader)</li>
+<li>GL: -nostenciltwoside disables GL_EXT_stencil_two_side (which accelerat=
+e shadow rendering)</li>
+<li>GL: -notexture3d disables GL_EXT_texture3D (required for spherical ligh=
+ts, otherwise they render as a column)</li>
+<li>GL: -novertexshader disables GL_ARB_vertex_shader (allows vertex shader=
+ effects)</li>
+<li>Game: -battlemech runs the multiplayer topdown deathmatch game BattleMe=
+ch</li>
+<li>Game: -contagiontheory runs the game Contagion Theory</li>
+<li>Game: -darsana runs the game Darsana</li>
+<li>Game: -did2 runs the game Defeat In Detail 2</li>
+<li>Game: -goodvsbad2 runs the psychadelic RTS FPS game Good Vs Bad 2</li>
+<li>Game: -hipnotic runs Quake mission pack 1: The Scourge of Armagon</li>
+<li>Game: -nehahra runs The Seal of Nehahra movie and game</li>
+<li>Game: -neoteric runs the game Neoteric</li>
+<li>Game: -netherworld runs the game Netherworld: Dark Master</li>
+<li>Game: -nexuiz runs the multiplayer game Nexuiz</li>
+<li>Game: -openquartz runs the game OpenQuartz, a standalone GPL replacemen=
+t of the quake content</li>
+<li>Game: -prydon runs the topdown point and click action-RPG Prydon Gate</=
+li>
+<li>Game: -quake runs the game Quake (default)</li>
+<li>Game: -rogue runs Quake mission pack 2: The Dissolution of Eternity</li=
+>
+<li>Game: -setheral runs the multiplayer game Setheral</li>
+<li>Game: -som runs the multiplayer game Son Of Man</li>
+<li>Game: -tenebrae runs the graphics test mod known as Tenebrae (some feat=
+ures not implemented)</li>
+<li>Game: -teu runs The Evil Unleashed (this option is obsolete as they are=
+ not using darkplaces)</li>
+<li>Game: -thehunted runs the game The Hunted</li>
+<li>Game: -transfusion runs Transfusion (the recreation of Blood in Quake)<=
+/li>
+<li>Game: -zymotic runs the singleplayer game Zymotic</li>
+<li>Input: -nomouse disables mouse support (see also vid_mouse cvar)</li>
+<li>Input: -nomouse disables mouse support (see also vid_mouse cvar)</li>
+<li>Linux ALSA Sound: -sndpcm devicename selects which pcm device to us, de=
+fault is "default"</li>
+<li>Linux GLX: -gl_driver drivername selects a GL driver library, default i=
+s libGL.so.1, useful only for using fxmesa or similar, if you don't know wh=
+at this is for, you don't need it</li>
+<li>Linux GLX: -nogetprocaddress disables GLX_ARB_get_proc_address (not req=
+uired, more formal method of getting extension functions)</li>
+<li>Linux GLX: -novideosync disables GLX_SGI_swap_control</li>
+<li>Linux Sound: -cddev devicepath chooses which CD drive to use</li>
+<li>MacOSX GLX: -nogetprocaddress disables GLX_ARB_get_proc_address (not re=
+quired, more formal method of getting extension functions)</li>
+<li>MacOSX GLX: -novideosync disables GLX_SGI_swap_control</li>
+<li>SDL GL: -gl_driver drivername selects a GL driver library, default is w=
+hatever SDL recommends, useful only for 3dfxogl.dll/3dfxvgl.dll or fxmesa o=
+r similar, if you don't know what this is for, you don't need it</li>
+<li>Server: -dedicated [playerlimit] starts a dedicated server (with a comm=
+and console), default playerlimit is 8</li>
+<li>Server: -ip ipaddress sets the ip address of this machine for purposes =
+of networking (default 0.0.0.0 also known as INADDR_ANY), use only if you h=
+ave multiple network adapters and need to choose one specifically.</li>
+<li>Server: -listen [playerlimit] starts a multiplayer server with graphica=
+l client, like singleplayer but other players can connect, default playerli=
+mit is 8</li>
+<li>Server: -port portnumber sets the port to use for a server (default 260=
+00, the same port as QUAKE itself), useful if you host multiple servers on =
+your machine</li>
+<li>Sound: -nocdaudio disables CD audio support</li>
+<li>Sound: -nosound disables sound (including CD audio)</li>
+<li>Sound: -novorbis disables ogg vorbis sound support</li>
+<li>Sound: -simsound runs sound mixing but with no output</li>
+<li>Sound: -sndbits bits chooses 8 bit or 16 bit sound output</li>
+<li>Sound: -sndmono sets sound output to mono</li>
+<li>Sound: -sndquad sets sound output to 4 channel surround</li>
+<li>Sound: -sndspeed hz chooses sound output rate (supported values are 480=
+00, 44100, 32000, 24000, 22050, 16000, 11025 (quake), 8000)</li>
+<li>Sound: -sndstereo sets sound output to stereo</li>
+<li>Video: -bpp bits performs +vid_bitsperpixel bits (example -bpp 32 or -b=
+pp 16)</li>
+<li>Video: -fullscreen performs +vid_fullscreen 1</li>
+<li>Video: -height pixels performs +vid_height pixels and also +vid_width p=
+ixels*4/3 if only -height is specified (example: -height 768 sets 1024x768 =
+mode)</li>
+<li>Video: -width pixels performs +vid_width pixels and also +vid_height pi=
+xels*3/4 if only -width is specified (example: -width 1024 sets 1024x768 mo=
+de)</li>
+<li>Video: -window performs +vid_fullscreen 0</li>
+<li>Windows DirectSound: -primarysound locks the sound hardware for exclusi=
+ve use</li>
+<li>Windows DirectSound: -snoforceformat uses the format that DirectSound r=
+eturns, rather than forcing it</li>
+<li>Windows GDI Input: -noforcemaccel disables setting of mouse acceleratio=
+n (not used with -dinput, windows only)</li>
+<li>Windows GDI Input: -noforcemparms disables setting of mouse parameters =
+(not used with -dinput, windows only)</li>
+<li>Windows GDI Input: -noforcemspd disables setting of mouse speed (not us=
+ed with -dinput, windows only)</li>
+<li>Windows Input: -dinput enables DirectInput for mouse/joystick input</li=
+>
+<li>Windows Input: -nojoy disables joystick support, may be a small speed i=
+ncrease</li>
+<li>Windows Sound: -wavonly uses wave sound instead of DirectSound</li>
+<li>Windows WGL: -gl_driver drivername selects a GL driver library, default=
+ is opengl32.dll, useful only for 3dfxogl.dll or 3dfxvgl.dll, if you don't =
+know what this is for, you don't need it</li>
+<li>Windows WGL: -novideosync disables WGL_EXT_swap_control</li>
+</ul>
+
+
+
+<a name=3D"ConsoleVariables"></a>
+<h2>Full Console Variable List as of 2007-03-11</h2>
+<table>
+<tbody><tr><td>_cl_color</td><td>0</td><td>internal storage cvar for curren=
+t player colors (changed by color command)</td></tr>
+<tr><td>_cl_name</td><td>player</td><td>internal storage cvar for current p=
+layer name (changed by name command)</td></tr>
+<tr><td>_cl_playermodel</td><td></td><td>internal storage cvar for current =
+player model in Nexuiz (changed by playermodel command)</td></tr>
+<tr><td>_cl_playerskin</td><td></td><td>internal storage cvar for current p=
+layer skin in Nexuiz (changed by playerskin command)</td></tr>
+<tr><td>_cl_pmodel</td><td>0</td><td>internal storage cvar for current play=
+er model number in nehahra (changed by pmodel command)</td></tr>
+<tr><td>_cl_rate</td><td>10000</td><td>internal storage cvar for current ra=
+te (changed by rate command)</td></tr>
+<tr><td>_snd_mixahead</td><td>0.1</td><td>how much sound to mix ahead of ti=
+me</td></tr>
+<tr><td>ambient_fade</td><td>100</td><td>rate of volume fading when moving =
+from one environment to another</td></tr>
+<tr><td>ambient_level</td><td>0.3</td><td>volume of environment noises (wat=
+er and wind)</td></tr>
+<tr><td>bgmvolume</td><td>1</td><td>volume of background music (such as CD =
+music or replacement files such as id1/sound/cdtracks/track002.ogg)</td></t=
+r>
+<tr><td>cdaudioinitialized</td><td>0</td><td>indicates if CD Audio system i=
+s active</td></tr>
+<tr><td>chase_active</td><td>0</td><td>enables chase cam</td></tr>
+<tr><td>chase_back</td><td>48</td><td>chase cam distance from the player</t=
+d></tr>
+<tr><td>chase_stevie</td><td>0</td><td>chase cam view from above (used only=
+ by GoodVsBad2)</td></tr>
+<tr><td>chase_up</td><td>24</td><td>chase cam distance from the player</td>=
+</tr>
+<tr><td>cl_anglespeedkey</td><td>1.5</td><td>how much +speed multiplies key=
+board turning speed</td></tr>
+<tr><td>cl_autodemo</td><td>0</td><td>records every game played, using the =
+date/time and map name to name the demo file</td></tr>
+<tr><td>cl_autodemo_nameformat</td><td>%Y-%m-%d_%H-%M</td><td>The format of=
+ the cl_autodemo filename, followed by the map name</td></tr>
+<tr><td>cl_backspeed</td><td>400</td><td>backward movement speed</td></tr>
+<tr><td>cl_beams_instantaimhack</td><td>1</td><td>makes your lightning gun =
+aiming update instantly</td></tr>
+<tr><td>cl_beams_lightatend</td><td>0</td><td>make a light at the end of th=
+e beam</td></tr>
+<tr><td>cl_beams_polygons</td><td>1</td><td>use beam polygons instead of mo=
+dels</td></tr>
+<tr><td>cl_beams_quakepositionhack</td><td>1</td><td>makes your lightning g=
+un appear to fire from your waist (as in Quake and QuakeWorld)</td></tr>
+<tr><td>cl_bob</td><td>0.02</td><td>view bobbing amount</td></tr>
+<tr><td>cl_bobcycle</td><td>0.6</td><td>view bobbing speed</td></tr>
+<tr><td>cl_bobmodel</td><td>1</td><td>enables gun bobbing</td></tr>
+<tr><td>cl_bobmodel_side</td><td>0.05</td><td>gun bobbing sideways sway amo=
+unt</td></tr>
+<tr><td>cl_bobmodel_speed</td><td>7</td><td>gun bobbing speed</td></tr>
+<tr><td>cl_bobmodel_up</td><td>0.02</td><td>gun bobbing upward movement amo=
+unt</td></tr>
+<tr><td>cl_bobup</td><td>0.5</td><td>view bobbing adjustment that makes the=
+ up or down swing of the bob last longer</td></tr>
+<tr><td>cl_capturevideo</td><td>0</td><td>enables saving of video to a .avi=
+ file using uncompressed I420 colorspace and PCM audio, note that scr_scree=
+nshot_gammaboost affects the brightness of the output)</td></tr>
+<tr><td>cl_capturevideo_fps</td><td>30</td><td>how many frames per second t=
+o save (29.97 for NTSC, 30 for typical PC video, 15 can be useful)</td></tr=
+>
+<tr><td>cl_capturevideo_number</td><td>1</td><td>number to append to video =
+filename, incremented each time a capture begins</td></tr>
+<tr><td>cl_capturevideo_realtime</td><td>0</td><td>causes video saving to o=
+perate in realtime (mostly useful while playing, not while capturing demos)=
+, this can produce a much lower quality video due to poor sound/video sync =
+and will abort saving if your machine stalls for over 1 second</td></tr>
+<tr><td>cl_curl_enabled</td><td>0</td><td>whether client's download support=
+ is enabled</td></tr>
+<tr><td>cl_curl_maxdownloads</td><td>1</td><td>maximum number of concurrent=
+ HTTP/FTP downloads</td></tr>
+<tr><td>cl_curl_maxspeed</td><td>100</td><td>maximum download speed (KiB/s)=
+</td></tr>
+<tr><td>cl_deathnoviewmodel</td><td>1</td><td>hides gun model when dead</td=
+></tr>
+<tr><td>cl_deathscoreboard</td><td>1</td><td>shows scoreboard (+showscores)=
+ while dead</td></tr>
+<tr><td>cl_decals</td><td>0</td><td>enables decals (bullet holes, blood, et=
+c)</td></tr>
+<tr><td>cl_decals_fadetime</td><td>20</td><td>how long decals take to fade =
+away</td></tr>
+<tr><td>cl_decals_time</td><td>0</td><td>how long before decals start to fa=
+de away</td></tr>
+<tr><td>cl_dlights_decaybrightness</td><td>1</td><td>reduces brightness of =
+light flashes over time</td></tr>
+<tr><td>cl_dlights_decayradius</td><td>1</td><td>reduces size of light flas=
+hes over time</td></tr>
+<tr><td>cl_explosions_alpha_end</td><td>0</td><td>end alpha of an explosion=
+ shell (just before it disappears)</td></tr>
+<tr><td>cl_explosions_alpha_start</td><td>1.5</td><td>starting alpha of an =
+explosion shell</td></tr>
+<tr><td>cl_explosions_lifetime</td><td>0.5</td><td>how long an explosion sh=
+ell lasts</td></tr>
+<tr><td>cl_explosions_size_end</td><td>128</td><td>ending alpha of an explo=
+sion shell (just before it disappears)</td></tr>
+<tr><td>cl_explosions_size_start</td><td>16</td><td>starting size of an exp=
+losion shell</td></tr>
+<tr><td>cl_forwardspeed</td><td>400</td><td>forward movement speed</td></tr=
+>
+<tr><td>cl_gravity</td><td>800</td><td>how much gravity to apply in client =
+physics (should match sv_gravity)</td></tr>
+<tr><td>cl_itembobheight</td><td>0</td><td>how much items bob up and down (=
+try 8)</td></tr>
+<tr><td>cl_itembobspeed</td><td>0.5</td><td>how frequently items bob up and=
+ down</td></tr>
+<tr><td>cl_joinbeforedownloadsfinish</td><td>1</td><td>if non-zero the game=
+ will begin after the map is loaded before other downloads finish</td></tr>
+<tr><td>cl_maxfps</td><td>1000</td><td>maximum fps cap, if game is running =
+faster than this it will wait before running another frame (useful to make =
+cpu time available to other programs)</td></tr>
+<tr><td>cl_movement</td><td>0</td><td>enables clientside prediction of your=
+ player movement</td></tr>
+<tr><td>cl_movement_accelerate</td><td>10</td><td>how fast you accelerate (=
+should match sv_accelerate)</td></tr>
+<tr><td>cl_movement_airaccel_qw</td><td>1</td><td>ratio of QW-style air con=
+trol as opposed to simple acceleration (should match sv_airaccel_qw)</td></=
+tr>
+<tr><td>cl_movement_airaccel_sideways_friction</td><td>0</td><td>anti-sidew=
+ays movement stabilization (should match sv_airaccel_sideways_friction)</td=
+></tr>
+<tr><td>cl_movement_airaccelerate</td><td>-1</td><td>how fast you accelerat=
+e while in the air (should match sv_airaccelerate), if less than 0 the cl_m=
+ovement_accelerate variable is used instead</td></tr>
+<tr><td>cl_movement_edgefriction</td><td>2</td><td>how much to slow down wh=
+en you may be about to fall off a ledge (should match edgefriction)</td></t=
+r>
+<tr><td>cl_movement_friction</td><td>4</td><td>how fast you slow down (shou=
+ld match sv_friction)</td></tr>
+<tr><td>cl_movement_jumpvelocity</td><td>270</td><td>how fast you move upwa=
+rd when you begin a jump (should match the quakec code)</td></tr>
+<tr><td>cl_movement_latency</td><td>0</td><td>compensates for this much lat=
+ency (ping time) on quake servers which do not really support prediction, n=
+o effect on darkplaces7 protocol servers or quakeworld servers</td></tr>
+<tr><td>cl_movement_maxairspeed</td><td>30</td><td>how fast you can move wh=
+ile in the air (should match sv_maxairspeed)</td></tr>
+<tr><td>cl_movement_maxspeed</td><td>320</td><td>how fast you can move (sho=
+uld match sv_maxspeed)</td></tr>
+<tr><td>cl_movement_stepheight</td><td>18</td><td>how tall a step you can s=
+tep in one instant (should match sv_stepheight)</td></tr>
+<tr><td>cl_movement_stopspeed</td><td>100</td><td>speed below which you wil=
+l be slowed rapidly to a stop rather than sliding endlessly (should match s=
+v_stopspeed)</td></tr>
+<tr><td>cl_movement_wateraccelerate</td><td>-1</td><td>how fast you acceler=
+ate while in the air (should match sv_airaccelerate), if less than 0 the cl=
+_movement_accelerate variable is used instead</td></tr>
+<tr><td>cl_movement_waterfriction</td><td>-1</td><td>how fast you slow down=
+ (should match sv_friction), if less than 0 the cl_movement_friction variab=
+le is used instead</td></tr>
+<tr><td>cl_movespeedkey</td><td>2.0</td><td>how much +speed multiplies keyb=
+oard movement speed</td></tr>
+<tr><td>cl_netinputpacketlosstolerance</td><td>4</td><td>how many packets i=
+n a row can be lost without movement issues when using cl_movement (technic=
+ally how many input messages to repeat in each packet that have not yet bee=
+n acknowledged by the server)</td></tr>
+<tr><td>cl_netinputpacketspersecond</td><td>50</td><td>how many input packe=
+ts to send to server each second</td></tr>
+<tr><td>cl_netlocalping</td><td>0</td><td>lags local loopback connection by=
+ this much ping time (useful to play more fairly on your own server with pe=
+ople with higher pings)</td></tr>
+<tr><td>cl_netpacketloss</td><td>0</td><td>drops this percentage of packets=
+ (incoming and outgoing), useful for testing network protocol robustness (e=
+ffects failing to start, sounds failing to play, etc)</td></tr>
+<tr><td>cl_nettimesyncmode</td><td>2</td><td>selects method of time synchro=
+nization in client with regard to server packets, values are: 0 =3D no sync=
+, 1 =3D exact sync (reset timing each packet), 2 =3D loose sync (reset timi=
+ng only if it is out of bounds), 3 =3D tight sync and bounding</td></tr>
+<tr><td>cl_nodelta</td><td>0</td><td>disables delta compression of non-play=
+er entities in QW network protocol</td></tr>
+<tr><td>cl_nolerp</td><td>0</td><td>network update smoothing</td></tr>
+<tr><td>cl_noplayershadow</td><td>0</td><td>hide player shadow</td></tr>
+<tr><td>cl_particles</td><td>1</td><td>enables particle effects</td></tr>
+<tr><td>cl_particles_blood</td><td>1</td><td>enables blood effects</td></tr=
+>
+<tr><td>cl_particles_blood_alpha</td><td>0.5</td><td>opacity of blood</td><=
+/tr>
+<tr><td>cl_particles_blood_bloodhack</td><td>1</td><td>make certain quake p=
+article() calls create blood effects instead</td></tr>
+<tr><td>cl_particles_bubbles</td><td>1</td><td>enables bubbles (used by mul=
+tiple effects)</td></tr>
+<tr><td>cl_particles_bulletimpacts</td><td>1</td><td>enables bulletimpact e=
+ffects</td></tr>
+<tr><td>cl_particles_explosions_shell</td><td>0</td><td>enables polygonal s=
+hell from explosions</td></tr>
+<tr><td>cl_particles_explosions_smokes</td><td>0</td><td>enables smoke from=
+ explosions</td></tr>
+<tr><td>cl_particles_explosions_sparks</td><td>1</td><td>enables sparks fro=
+m explosions</td></tr>
+<tr><td>cl_particles_quake</td><td>0</td><td>makes particle effects look mo=
+stly like the ones in Quake</td></tr>
+<tr><td>cl_particles_quality</td><td>1</td><td>multiplies number of particl=
+es and reduces their alpha</td></tr>
+<tr><td>cl_particles_size</td><td>1</td><td>multiplies particle size</td></=
+tr>
+<tr><td>cl_particles_smoke</td><td>1</td><td>enables smoke (used by multipl=
+e effects)</td></tr>
+<tr><td>cl_particles_smoke_alpha</td><td>0.5</td><td>smoke brightness</td><=
+/tr>
+<tr><td>cl_particles_smoke_alphafade</td><td>0.55</td><td>brightness fade p=
+er second</td></tr>
+<tr><td>cl_particles_sparks</td><td>1</td><td>enables sparks (used by multi=
+ple effects)</td></tr>
+<tr><td>cl_pitchspeed</td><td>150</td><td>keyboard pitch turning speed</td>=
+</tr>
+<tr><td>cl_port</td><td>0</td><td>forces client to use chosen port number i=
+f not 0</td></tr>
+<tr><td>cl_prydoncursor</td><td>0</td><td>enables a mouse pointer which is =
+able to click on entities in the world, useful for point and click mods, se=
+e PRYDON_CLIENTCURSOR extension in dpextensions.qc</td></tr>
+<tr><td>cl_rollangle</td><td>2.0</td><td>how much to tilt the view when str=
+afing</td></tr>
+<tr><td>cl_rollspeed</td><td>200</td><td>how much strafing is necessary to =
+tilt the view</td></tr>
+<tr><td>cl_serverextension_download</td><td>0</td><td>indicates whether the=
+ server supports the download command</td></tr>
+<tr><td>cl_shownet</td><td>0</td><td>1 =3D print packet size, 2 =3D print p=
+acket message list</td></tr>
+<tr><td>cl_sidespeed</td><td>350</td><td>strafe movement speed</td></tr>
+<tr><td>cl_slowmo</td><td>1</td><td>speed of game time (should match slowmo=
+)</td></tr>
+<tr><td>cl_sound_hknighthit</td><td>hknight/hit.wav</td><td>sound to play d=
+uring TE_KNIGHTSPIKE (empty cvar disables sound)</td></tr>
+<tr><td>cl_sound_r_exp3</td><td>weapons/r_exp3.wav</td><td>sound to play du=
+ring TE_EXPLOSION and related effects (empty cvar disables sound)</td></tr>
+<tr><td>cl_sound_ric1</td><td>weapons/ric1.wav</td><td>sound to play with 5=
+% chance during TE_SPIKE/TE_SUPERSPIKE (empty cvar disables sound)</td></tr=
+>
+<tr><td>cl_sound_ric2</td><td>weapons/ric2.wav</td><td>sound to play with 5=
+% chance during TE_SPIKE/TE_SUPERSPIKE (empty cvar disables sound)</td></tr=
+>
+<tr><td>cl_sound_ric3</td><td>weapons/ric3.wav</td><td>sound to play with 1=
+0% chance during TE_SPIKE/TE_SUPERSPIKE (empty cvar disables sound)</td></t=
+r>
+<tr><td>cl_sound_tink1</td><td>weapons/tink1.wav</td><td>sound to play with=
+ 80% chance during TE_SPIKE/TE_SUPERSPIKE (empty cvar disables sound)</td><=
+/tr>
+<tr><td>cl_sound_wizardhit</td><td>wizard/hit.wav</td><td>sound to play dur=
+ing TE_WIZSPIKE (empty cvar disables sound)</td></tr>
+<tr><td>cl_stainmaps</td><td>1</td><td>stains lightmaps, much faster than d=
+ecals but blurred</td></tr>
+<tr><td>cl_stainmaps_clearonload</td><td>1</td><td>clear stainmaps on map r=
+estart</td></tr>
+<tr><td>cl_stairsmoothspeed</td><td>160</td><td>how fast your view moves up=
+ward/downward when running up/down stairs</td></tr>
+<tr><td>cl_upspeed</td><td>400</td><td>vertical movement speed (while swimm=
+ing or flying)</td></tr>
+<tr><td>cl_viewmodel_scale</td><td>0.3</td><td>changes size of gun model, l=
+ower values prevent poking into walls but cause strange artifacts on lighti=
+ng and especially r_stereo/vid_stereobuffer options where the size of the g=
+un becomes visible</td></tr>
+<tr><td>cl_yawspeed</td><td>140</td><td>keyboard yaw turning speed</td></tr=
+>
+<tr><td>cmdline</td><td>0</td><td>contains commandline the engine was launc=
+hed with</td></tr>
+<tr><td>collision_endnudge</td><td>0</td><td>how much to bias collision tra=
+ce end</td></tr>
+<tr><td>collision_enternudge</td><td>0</td><td>how much to bias collision e=
+ntry fraction</td></tr>
+<tr><td>collision_impactnudge</td><td>0.03125</td><td>how much to back off =
+from the impact</td></tr>
+<tr><td>collision_leavenudge</td><td>0</td><td>how much to bias collision e=
+xit fraction</td></tr>
+<tr><td>collision_prefernudgedfraction</td><td>1</td><td>whether to sort co=
+llision events by nudged fraction (1) or real fraction (0)</td></tr>
+<tr><td>collision_startnudge</td><td>0</td><td>how much to bias collision t=
+race start</td></tr>
+<tr><td>con_closeontoggleconsole</td><td>1</td><td>allows toggleconsole bin=
+ds to close the console as well</td></tr>
+<tr><td>con_notify</td><td>4</td><td>how many notify lines to show (0-32)</=
+td></tr>
+<tr><td>con_notifytime</td><td>3</td><td>how long notify lines last, in sec=
+onds</td></tr>
+<tr><td>con_textsize</td><td>8</td><td>console text size in virtual 2D pixe=
+ls</td></tr>
+<tr><td>coop</td><td>0</td><td>coop mode, 0 =3D no coop, 1 =3D coop mode, m=
+ultiple players playing through the singleplayer game (coop mode also shuts=
+ off deathmatch)</td></tr>
+<tr><td>crosshair</td><td>0</td><td>selects crosshair to use (0 is none)</t=
+d></tr>
+<tr><td>crosshair_color_alpha</td><td>1</td><td>how opaque the crosshair sh=
+ould be</td></tr>
+<tr><td>crosshair_color_blue</td><td>0</td><td>customizable crosshair color=
+</td></tr>
+<tr><td>crosshair_color_green</td><td>0</td><td>customizable crosshair colo=
+r</td></tr>
+<tr><td>crosshair_color_red</td><td>1</td><td>customizable crosshair color<=
+/td></tr>
+<tr><td>crosshair_size</td><td>1</td><td>adjusts size of the crosshair on t=
+he screen</td></tr>
+<tr><td>csqc_progcrc</td><td>-1</td><td>CRC of csprogs.dat file to load (-1=
+ is none), only used during level changes and then reset to -1</td></tr>
+<tr><td>csqc_progname</td><td>csprogs.dat</td><td>name of csprogs.dat file =
+to load</td></tr>
+<tr><td>csqc_progsize</td><td>-1</td><td>file size of csprogs.dat file to l=
+oad (-1 is none), only used during level changes and then reset to -1</td><=
+/tr>
+<tr><td>cutscene</td><td>1</td><td>enables cutscenes in nehahra, can be use=
+d by other mods</td></tr>
+<tr><td>deathmatch</td><td>0</td><td>deathmatch mode, values depend on mod =
+but typically 0 =3D no deathmatch, 1 =3D normal deathmatch with respawning =
+weapons, 2 =3D weapons stay (players can only pick up new weapons)</td></tr=
+>
+<tr><td>demo_nehahra</td><td>0</td><td>reads all quake demos as nehahra mov=
+ie protocol</td></tr>
+<tr><td>developer</td><td>0</td><td>prints additional debugging messages an=
+d information (recommended for modders and level designers)</td></tr>
+<tr><td>developer_entityparsing</td><td>0</td><td>prints detailed network e=
+ntities information each time a packet is received</td></tr>
+<tr><td>developer_memory</td><td>0</td><td>prints debugging information abo=
+ut memory allocations</td></tr>
+<tr><td>developer_memorydebug</td><td>0</td><td>enables memory corruption c=
+hecks (very slow)</td></tr>
+<tr><td>developer_networkentities</td><td>0</td><td>prints received entitie=
+s, value is 0-4 (higher for more info)</td></tr>
+<tr><td>developer_networking</td><td>0</td><td>prints all received and sent=
+ packets (recommended only for debugging)</td></tr>
+<tr><td>developer_texturelogging</td><td>0</td><td>produces a textures.log =
+file containing names of skins and map textures the engine tried to load</t=
+d></tr>
+<tr><td>edgefriction</td><td>2</td><td>how much you slow down when nearing =
+a ledge you might fall off</td></tr>
+<tr><td>forceqmenu</td><td>0</td><td>enables the quake menu instead of the =
+quakec menu.dat (if present)</td></tr>
+<tr><td>fov</td><td>90</td><td>field of vision, 1-170 degrees, default 90, =
+some players use 110-130</td></tr>
+<tr><td>fraglimit</td><td>0</td><td>ends level if this many frags is reache=
+d by any player</td></tr>
+<tr><td>freelook</td><td>1</td><td>mouse controls pitch instead of forward/=
+back</td></tr>
+<tr><td>gamecfg</td><td>0</td><td>unused cvar in quake, can be used by mods=
+</td></tr>
+<tr><td>gameversion</td><td>0</td><td>version of game data (mod-specific), =
+when client and server gameversion mismatch in the server browser the serve=
+r is shown as incompatible</td></tr>
+<tr><td>gl_combine</td><td>1</td><td>faster rendering by using GL_ARB_textu=
+re_env_combine extension (part of OpenGL 1.3 and above)</td></tr>
+<tr><td>gl_dither</td><td>1</td><td>enables OpenGL dithering (16bit looks b=
+ad with this off)</td></tr>
+<tr><td>gl_ext_separatetencil</td><td>1</td><td>make use of OpenGL 2.0 glSt=
+encilOpSeparate or GL_ATI_separate_stencil extension</td></tr>
+<tr><td>gl_ext_stenciltwoside</td><td>1</td><td>make use of GL_EXT_stencilt=
+woside extension (NVIDIA only)</td></tr>
+<tr><td>gl_finish</td><td>0</td><td>make the cpu wait for the graphics proc=
+essor at the end of each rendered frame (can help with strange input or vid=
+eo lag problems on some machines)</td></tr>
+<tr><td>gl_flashblend</td><td>0</td><td>render bright coronas for dynamic l=
+ights instead of actual lighting, fast but ugly</td></tr>
+<tr><td>gl_fogblue</td><td>0.3</td><td>nehahra fog color blue value (for Ne=
+hahra compatibility only)</td></tr>
+<tr><td>gl_fogdensity</td><td>0.25</td><td>nehahra fog density (recommend v=
+alues below 0.1) (for Nehahra compatibility only)</td></tr>
+<tr><td>gl_fogenable</td><td>0</td><td>nehahra fog enable (for Nehahra comp=
+atibility only)</td></tr>
+<tr><td>gl_fogend</td><td>0</td><td>nehahra fog end distance (for Nehahra c=
+ompatibility only)</td></tr>
+<tr><td>gl_foggreen</td><td>0.3</td><td>nehahra fog color green value (for =
+Nehahra compatibility only)</td></tr>
+<tr><td>gl_fogred</td><td>0.3</td><td>nehahra fog color red value (for Neha=
+hra compatibility only)</td></tr>
+<tr><td>gl_fogstart</td><td>0</td><td>nehahra fog start distance (for Nehah=
+ra compatibility only)</td></tr>
+<tr><td>gl_lightmaps</td><td>0</td><td>draws only lightmaps, no texture (fo=
+r level designers)</td></tr>
+<tr><td>gl_lockarrays</td><td>0</td><td>enables use of glLockArraysEXT, may=
+ cause glitches with some broken drivers, and may be slower than normal</td=
+></tr>
+<tr><td>gl_lockarrays_minimumvertices</td><td>1</td><td>minimum number of v=
+ertices required for use of glLockArraysEXT, setting this too low may reduc=
+e performance</td></tr>
+<tr><td>gl_max_size</td><td>2048</td><td>maximum allowed texture size, can =
+be used to reduce video memory usage, note: this is automatically reduced t=
+o match video card capabilities (such as 256 on 3Dfx cards before Voodoo4/5=
+)</td></tr>
+<tr><td>gl_mesh_drawrangeelements</td><td>1</td><td>use glDrawRangeElements=
+ function if available instead of glDrawElements (for performance compariso=
+ns or bug testing)</td></tr>
+<tr><td>gl_mesh_testarrayelement</td><td>0</td><td>use glBegin(GL_TRIANGLES=
+);glArrayElement();glEnd(); primitives instead of glDrawElements (useful to=
+ test for driver bugs with glDrawElements)</td></tr>
+<tr><td>gl_mesh_testmanualfeeding</td><td>0</td><td>use glBegin(GL_TRIANGLE=
+S);glTexCoord2f();glVertex3f();glEnd(); primitives instead of glDrawElement=
+s (useful to test for driver bugs with glDrawElements)</td></tr>
+<tr><td>gl_paranoid</td><td>0</td><td>enables OpenGL error checking and oth=
+er tests</td></tr>
+<tr><td>gl_picmip</td><td>0</td><td>reduces resolution of textures by power=
+s of 2, for example 1 will halve width/height, reducing texture memory usag=
+e by 75%</td></tr>
+<tr><td>gl_polyblend</td><td>1</td><td>tints view while underwater, hurt, e=
+tc</td></tr>
+<tr><td>gl_printcheckerror</td><td>0</td><td>prints all OpenGL error checks=
+, useful to identify location of driver crashes</td></tr>
+<tr><td>gl_texture_anisotropy</td><td>1</td><td>anisotropic filtering quali=
+ty (if supported by hardware), 1 sample (no anisotropy) and 8 sample (8 tap=
+ anisotropy) are recommended values</td></tr>
+<tr><td>halflifebsp</td><td>0</td><td>indicates the current map is hlbsp fo=
+rmat (useful to know because of different bounding box sizes)</td></tr>
+<tr><td>host_framerate</td><td>0</td><td>locks frame timing to this value i=
+n seconds, 0.05 is 20fps for example, note that this can easily run too fas=
+t, use cl_maxfps if you want to limit your framerate instead, or sys_ticrat=
+e to limit server speed</td></tr>
+<tr><td>host_speeds</td><td>0</td><td>reports how much time is used in serv=
+er/graphics/sound</td></tr>
+<tr><td>hostname</td><td>UNNAMED</td><td>server message to show in server b=
+rowser</td></tr>
+<tr><td>in_pitch_max</td><td>90</td><td>how far upward you can aim (quake u=
+sed 80</td></tr>
+<tr><td>in_pitch_min</td><td>-90</td><td>how far downward you can aim (quak=
+e used -70</td></tr>
+<tr><td>joy_axisforward</td><td>1</td><td>which joystick axis to query for =
+forward/backward movement</td></tr>
+<tr><td>joy_axispitch</td><td>3</td><td>which joystick axis to query for lo=
+oking up/down</td></tr>
+<tr><td>joy_axisroll</td><td>-1</td><td>which joystick axis to query for ti=
+lting head right/left</td></tr>
+<tr><td>joy_axisside</td><td>0</td><td>which joystick axis to query for rig=
+ht/left movement</td></tr>
+<tr><td>joy_axisup</td><td>-1</td><td>which joystick axis to query for up/d=
+own movement</td></tr>
+<tr><td>joy_axisyaw</td><td>2</td><td>which joystick axis to query for look=
+ing right/left</td></tr>
+<tr><td>joy_deadzoneforward</td><td>0</td><td>deadzone tolerance, suggested=
+ values are in the range 0 to 0.01</td></tr>
+<tr><td>joy_deadzonepitch</td><td>0</td><td>deadzone tolerance, suggested v=
+alues are in the range 0 to 0.01</td></tr>
+<tr><td>joy_deadzoneroll</td><td>0</td><td>deadzone tolerance, suggested va=
+lues are in the range 0 to 0.01</td></tr>
+<tr><td>joy_deadzoneside</td><td>0</td><td>deadzone tolerance, suggested va=
+lues are in the range 0 to 0.01</td></tr>
+<tr><td>joy_deadzoneup</td><td>0</td><td>deadzone tolerance, suggested valu=
+es are in the range 0 to 0.01</td></tr>
+<tr><td>joy_deadzoneyaw</td><td>0</td><td>deadzone tolerance, suggested val=
+ues are in the range 0 to 0.01</td></tr>
+<tr><td>joy_detected</td><td>0</td><td>number of joysticks detected by engi=
+ne</td></tr>
+<tr><td>joy_enable</td><td>1</td><td>enables joystick support</td></tr>
+<tr><td>joy_index</td><td>0</td><td>selects which joystick to use if you ha=
+ve multiple</td></tr>
+<tr><td>joy_sensitivityforward</td><td>-1</td><td>movement multiplier</td><=
+/tr>
+<tr><td>joy_sensitivitypitch</td><td>1</td><td>movement multiplier</td></tr=
+>
+<tr><td>joy_sensitivityroll</td><td>1</td><td>movement multiplier</td></tr>
+<tr><td>joy_sensitivityside</td><td>1</td><td>movement multiplier</td></tr>
+<tr><td>joy_sensitivityup</td><td>1</td><td>movement multiplier</td></tr>
+<tr><td>joy_sensitivityyaw</td><td>-1</td><td>movement multiplier</td></tr>
+<tr><td>joyadvanced</td><td>0</td><td>use more than 2 axis joysticks (confi=
+guring this is very technical)</td></tr>
+<tr><td>joyadvaxisr</td><td>0</td><td>axis mapping for joyadvanced 1 mode</=
+td></tr>
+<tr><td>joyadvaxisu</td><td>0</td><td>axis mapping for joyadvanced 1 mode</=
+td></tr>
+<tr><td>joyadvaxisv</td><td>0</td><td>axis mapping for joyadvanced 1 mode</=
+td></tr>
+<tr><td>joyadvaxisx</td><td>0</td><td>axis mapping for joyadvanced 1 mode</=
+td></tr>
+<tr><td>joyadvaxisy</td><td>0</td><td>axis mapping for joyadvanced 1 mode</=
+td></tr>
+<tr><td>joyadvaxisz</td><td>0</td><td>axis mapping for joyadvanced 1 mode</=
+td></tr>
+<tr><td>joyforwardsensitivity</td><td>-1.0</td><td>how fast the joystick mo=
+ves forward</td></tr>
+<tr><td>joyforwardthreshold</td><td>0.15</td><td>minimum joystick movement =
+necessary to move forward</td></tr>
+<tr><td>joyname</td><td>joystick</td><td>name of joystick to use (informati=
+onal only, used only by joyadvanced 1 mode)</td></tr>
+<tr><td>joypitchsensitivity</td><td>1.0</td><td>how fast the joystick looks=
+ up/down</td></tr>
+<tr><td>joypitchthreshold</td><td>0.15</td><td>minimum joystick movement ne=
+cessary to look up/down</td></tr>
+<tr><td>joysidesensitivity</td><td>-1.0</td><td>how fast the joystick moves=
+ sideways (strafing)</td></tr>
+<tr><td>joysidethreshold</td><td>0.15</td><td>minimum joystick movement nec=
+essary to move sideways (strafing)</td></tr>
+<tr><td>joystick</td><td>0</td><td>enables joysticks</td></tr>
+<tr><td>joywwhack1</td><td>0.0</td><td>special hack for wingman warrior</td=
+></tr>
+<tr><td>joywwhack2</td><td>0.0</td><td>special hack for wingman warrior</td=
+></tr>
+<tr><td>joyyawsensitivity</td><td>-1.0</td><td>how fast the joystick turns =
+left/right</td></tr>
+<tr><td>joyyawthreshold</td><td>0.15</td><td>minimum joystick movement nece=
+ssary to turn left/right</td></tr>
+<tr><td>locs_enable</td><td>1</td><td>enables replacement of certain % code=
+s in chat messages: %l (location), %d (last death location), %h (health), %=
+a (armor), %x (rockets), %c (cells), %r (rocket launcher status), %p (power=
+up status), %w (weapon status), %t (current time in level)</td></tr>
+<tr><td>locs_show</td><td>0</td><td>shows defined locations for editing pur=
+poses</td></tr>
+<tr><td>log_file</td><td></td><td>filename to log messages to</td></tr>
+<tr><td>lookspring</td><td>0</td><td>returns pitch to level with the floor =
+when no longer holding a pitch key</td></tr>
+<tr><td>lookstrafe</td><td>0</td><td>move instead of turning</td></tr>
+<tr><td>m_filter</td><td>0</td><td>smoothes mouse movement, less responsive=
+ but smoother aiming</td></tr>
+<tr><td>m_forward</td><td>1</td><td>mouse forward speed multiplier</td></tr=
+>
+<tr><td>m_pitch</td><td>0.022</td><td>mouse pitch speed multiplier</td></tr=
+>
+<tr><td>m_side</td><td>0.8</td><td>mouse side speed multiplier</td></tr>
+<tr><td>m_yaw</td><td>0.022</td><td>mouse yaw speed multiplier</td></tr>
+<tr><td>mcbsp</td><td>0</td><td>indicates the current map is mcbsp format (=
+useful to know because of different bounding box sizes)</td></tr>
+<tr><td>menu_options_colorcontrol_correctionvalue</td><td>0.5</td><td>inten=
+sity value that matches up to white/black dither pattern, should be 0.5 for=
+ linear color</td></tr>
+<tr><td>mod_q3bsp_curves_collisions</td><td>1</td><td>enables collisions wi=
+th curves (SLOW)</td></tr>
+<tr><td>mod_q3bsp_debugtracebrush</td><td>0</td><td>selects different trace=
+brush bsp recursion algorithms (for debugging purposes only)</td></tr>
+<tr><td>mod_q3bsp_lightmapmergepower</td><td>4</td><td>merges the quake3 12=
+8x128 lightmap textures into larger lightmap group textures to speed up ren=
+dering, 1 =3D 256x256, 2 =3D 512x512, 3 =3D 1024x1024, 4 =3D 2048x2048, 5 =
+=3D 4096x4096, ...</td></tr>
+<tr><td>mod_q3bsp_optimizedtraceline</td><td>1</td><td>whether to use optim=
+ized traceline code for line traces (as opposed to tracebox code)</td></tr>
+<tr><td>nehx00</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx01</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx02</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx03</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx04</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx05</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx06</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx07</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx08</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx09</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx10</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx11</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx12</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx13</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx14</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx15</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx16</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx17</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx18</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>nehx19</td><td>0</td><td>nehahra data storage cvar (used in singlep=
+layer)</td></tr>
+<tr><td>net_address</td><td>0.0.0.0</td><td>network address to open ports o=
+n</td></tr>
+<tr><td>net_address_ipv6</td><td>[0:0:0:0:0:0:0:0]</td><td>network address =
+to open ipv6 ports on</td></tr>
+<tr><td>net_connectfloodblockingtimeout</td><td>5</td><td>when a connection=
+ packet is received, it will block all future connect packets from that IP =
+address for this many seconds (cuts down on connect floods)</td></tr>
+<tr><td>net_connecttimeout</td><td>10</td><td>after requesting a connection=
+, the client must reply within this many seconds or be dropped (cuts down o=
+n connect floods)</td></tr>
+<tr><td>net_messagetimeout</td><td>300</td><td>drops players who have not s=
+ent any packets for this many seconds</td></tr>
+<tr><td>net_slist_maxtries</td><td>3</td><td>how many times to ask the same=
+ server for information (more times gives better ping reports but takes lon=
+ger)</td></tr>
+<tr><td>net_slist_queriesperframe</td><td>4</td><td>maximum number of serve=
+r information requests to send each rendered frame (guards against low fram=
+erates causing problems)</td></tr>
+<tr><td>net_slist_queriespersecond</td><td>20</td><td>how many server infor=
+mation requests to send per second</td></tr>
+<tr><td>net_slist_timeout</td><td>4</td><td>how long to listen for a server=
+ information response before giving up</td></tr>
+<tr><td>noaim</td><td>1</td><td>QW option to disable vertical autoaim</td><=
+/tr>
+<tr><td>noexit</td><td>0</td><td>kills anyone attempting to use an exit</td=
+></tr>
+<tr><td>nomonsters</td><td>0</td><td>unused cvar in quake, can be used by m=
+ods</td></tr>
+<tr><td>nosound</td><td>0</td><td>disables sound</td></tr>
+<tr><td>pausable</td><td>1</td><td>allow players to pause or not</td></tr>
+<tr><td>port</td><td>26000</td><td>server port for players to connect to</t=
+d></tr>
+<tr><td>pr_checkextension</td><td>1</td><td>indicates to QuakeC that the st=
+andard quakec extensions system is available (if 0, quakec should not attem=
+pt to use extensions)</td></tr>
+<tr><td>prvm_boundscheck</td><td>1</td><td>enables detection of out of boun=
+ds memory access in the QuakeC code being run (in other words, prevents rea=
+lly exceedingly bad QuakeC code from doing nasty things to your computer)</=
+td></tr>
+<tr><td>prvm_statementprofiling</td><td>0</td><td>counts how many times eac=
+h QuakeC statement has been executed, these counts are displayed in prvm_pr=
+intfunction output (if enabled)</td></tr>
+<tr><td>prvm_traceqc</td><td>0</td><td>prints every QuakeC statement as it =
+is executed (only for really thorough debugging!)</td></tr>
+<tr><td>qport</td><td>0</td><td>identification key for playing on qw server=
+s (allows you to maintain a connection to a quakeworld server even if your =
+port changes)</td></tr>
+<tr><td>r_ambient</td><td>0</td><td>brighter world cheat (not allowed in mu=
+ltiplayer), value is 0-128</td></tr>
+<tr><td>r_batchmode</td><td>1</td><td>selects method of rendering multiple =
+surfaces with one driver call (values are 0, 1, 2, etc...)</td></tr>
+<tr><td>r_bloom</td><td>0</td><td>enables bloom effect (makes bright pixels=
+ affect neighboring pixels)</td></tr>
+<tr><td>r_bloom_blur</td><td>4</td><td>how large the glow is</td></tr>
+<tr><td>r_bloom_brighten</td><td>2</td><td>how bright the glow is, after su=
+btract/power</td></tr>
+<tr><td>r_bloom_colorexponent</td><td>1</td><td>how exagerated the glow is<=
+/td></tr>
+<tr><td>r_bloom_colorscale</td><td>1</td><td>how bright the glow is</td></t=
+r>
+<tr><td>r_bloom_colorsubtract</td><td>0.125</td><td>reduces bloom colors by=
+ a certain amount</td></tr>
+<tr><td>r_bloom_resolution</td><td>320</td><td>what resolution to perform t=
+he bloom effect at (independent of screen resolution)</td></tr>
+<tr><td>r_coronas</td><td>1</td><td>brightness of corona flare effects arou=
+nd certain lights, 0 disables corona effects</td></tr>
+<tr><td>r_cullentities_trace</td><td>1</td><td>probabistically cull invisib=
+le entities</td></tr>
+<tr><td>r_cullentities_trace_delay</td><td>1</td><td>number of seconds unti=
+l the entity gets actually culled</td></tr>
+<tr><td>r_cullentities_trace_enlarge</td><td>0</td><td>box enlargement for =
+entity culling</td></tr>
+<tr><td>r_cullentities_trace_samples</td><td>2</td><td>number of samples to=
+ test for entity culling</td></tr>
+<tr><td>r_draweffects</td><td>1</td><td>renders temporary sprite effects</t=
+d></tr>
+<tr><td>r_drawentities</td><td>1</td><td>draw entities (doors, players, pro=
+jectiles, etc)</td></tr>
+<tr><td>r_drawexplosions</td><td>1</td><td>enables rendering of explosion s=
+hells (see also cl_particles_explosions_shell)</td></tr>
+<tr><td>r_drawparticles</td><td>1</td><td>enables drawing of particles</td>=
+</tr>
+<tr><td>r_drawportals</td><td>0</td><td>shows portals (separating polygons)=
+ in world interior in quake1 maps</td></tr>
+<tr><td>r_drawviewmodel</td><td>1</td><td>draw your weapon model</td></tr>
+<tr><td>r_dynamic</td><td>1</td><td>enables dynamic lights (rocket glow and=
+ such)</td></tr>
+<tr><td>r_editlights</td><td>0</td><td>enables .rtlights file editing mode<=
+/td></tr>
+<tr><td>r_editlights_cursordistance</td><td>1024</td><td>maximum distance o=
+f cursor from eye</td></tr>
+<tr><td>r_editlights_cursorgrid</td><td>4</td><td>snaps cursor to this grid=
+ size</td></tr>
+<tr><td>r_editlights_cursorpushback</td><td>0</td><td>how far to pull the c=
+ursor back toward the eye</td></tr>
+<tr><td>r_editlights_cursorpushoff</td><td>4</td><td>how far to push the cu=
+rsor off the impacted surface</td></tr>
+<tr><td>r_editlights_quakelightsizescale</td><td>1</td><td>changes size of =
+light entities loaded from a map</td></tr>
+<tr><td>r_explosionclip</td><td>1</td><td>enables collision detection for e=
+xplosion shell (so that it flattens against walls and floors)</td></tr>
+<tr><td>r_fullbright</td><td>0</td><td>make everything bright cheat (not al=
+lowed in multiplayer)</td></tr>
+<tr><td>r_fullbrights</td><td>1</td><td>enables glowing pixels in quake tex=
+tures (changes need r_restart to take effect)</td></tr>
+<tr><td>r_glsl</td><td>1</td><td>enables use of OpenGL 2.0 pixel shaders fo=
+r lighting</td></tr>
+<tr><td>r_glsl_deluxemapping</td><td>1</td><td>use per pixel lighting on de=
+luxemap-compiled q3bsp maps (or a value of 2 forces deluxemap shading even =
+without deluxemaps)</td></tr>
+<tr><td>r_glsl_offsetmapping</td><td>0</td><td>offset mapping effect (also =
+known as parallax mapping or virtual displacement mapping)</td></tr>
+<tr><td>r_glsl_offsetmapping_reliefmapping</td><td>0</td><td>relief mapping=
+ effect (higher quality)</td></tr>
+<tr><td>r_glsl_offsetmapping_scale</td><td>0.04</td><td>how deep the offset=
+ mapping effect is</td></tr>
+<tr><td>r_hdr</td><td>0</td><td>enables High Dynamic Range bloom effect (hi=
+gher quality version of r_bloom)</td></tr>
+<tr><td>r_hdr_glowintensity</td><td>1</td><td>how bright light emitting tex=
+tures should appear</td></tr>
+<tr><td>r_hdr_range</td><td>4</td><td>how much dynamic range to render bloo=
+m with (equivilant to multiplying r_bloom_brighten by this value and dividi=
+ng r_bloom_colorscale by this value)</td></tr>
+<tr><td>r_hdr_scenebrightness</td><td>1</td><td>global rendering brightness=
+</td></tr>
+<tr><td>r_lerpimages</td><td>1</td><td>bilinear filters images when scaling=
+ them up to power of 2 size (mode 1), looks better than glquake (mode 0)</t=
+d></tr>
+<tr><td>r_lerpmodels</td><td>1</td><td>enables animation smoothing on model=
+s</td></tr>
+<tr><td>r_lerpsprites</td><td>1</td><td>enables animation smoothing on spri=
+tes (requires r_lerpmodels 1)</td></tr>
+<tr><td>r_letterbox</td><td>0</td><td>reduces vertical height of view to si=
+mulate a letterboxed movie effect (can be used by mods for cutscenes)</td><=
+/tr>
+<tr><td>r_lightmaprgba</td><td>1</td><td>whether to use RGBA (32bit) or RGB=
+ (24bit) lightmaps</td></tr>
+<tr><td>r_lightningbeam_color_blue</td><td>1</td><td>color of the lightning=
+ beam effect</td></tr>
+<tr><td>r_lightningbeam_color_green</td><td>1</td><td>color of the lightnin=
+g beam effect</td></tr>
+<tr><td>r_lightningbeam_color_red</td><td>1</td><td>color of the lightning =
+beam effect</td></tr>
+<tr><td>r_lightningbeam_qmbtexture</td><td>0</td><td>load the qmb textures/=
+particles/lightning.pcx texture instead of generating one, can look better<=
+/td></tr>
+<tr><td>r_lightningbeam_repeatdistance</td><td>128</td><td>how far to stret=
+ch the texture along the lightning beam effect</td></tr>
+<tr><td>r_lightningbeam_scroll</td><td>5</td><td>speed of texture scrolling=
+ on the lightning beam effect</td></tr>
+<tr><td>r_lightningbeam_thickness</td><td>4</td><td>thickness of the lightn=
+ing beam effect</td></tr>
+<tr><td>r_lockpvs</td><td>0</td><td>disables pvs switching, allows you to w=
+alk around and inspect what is visible from a given location in the map (an=
+ything not visible from your current location will not be drawn)</td></tr>
+<tr><td>r_lockvisibility</td><td>0</td><td>disables visibility updates, all=
+ows you to walk around and inspect what is visible from a given viewpoint i=
+n the map (anything offscreen at the moment this is enabled will not be dra=
+wn)</td></tr>
+<tr><td>r_mipskins</td><td>0</td><td>mipmaps skins (so they become blurrier=
+ in the distance), disabled by default because it tends to blur with strang=
+e border colors from the skin</td></tr>
+<tr><td>r_mipsprites</td><td>1</td><td>mipmaps skins (so they become blurri=
+er in the distance), unlike skins the sprites do not have strange border co=
+lors</td></tr>
+<tr><td>r_nearclip</td><td>1</td><td>distance from camera of nearclip plane=
+</td></tr>
+<tr><td>r_nosurftextures</td><td>0</td><td>pretends there was no texture lu=
+mp found in the q1bsp/hlbsp loading (useful for debugging this rare case)</=
+td></tr>
+<tr><td>r_novis</td><td>0</td><td>draws whole level, see also sv_cullentiti=
+es_pvs 0</td></tr>
+<tr><td>r_precachetextures</td><td>1</td><td>0 =3D never upload textures un=
+til used, 1 =3D upload most textures before use (exceptions: rarely used sk=
+in colormap layers), 2 =3D upload all textures before use (can increase tex=
+ture memory usage significantly)</td></tr>
+<tr><td>r_q3bsp_renderskydepth</td><td>0</td><td>draws sky depth masking in=
+ q3 maps (as in q1 maps), this means for example that sky polygons can hide=
+ other things</td></tr>
+<tr><td>r_qb1sp_skymasking</td><td>1</td><td>allows sky polygons in quake1 =
+maps to obscure other geometry</td></tr>
+<tr><td>r_render</td><td>1</td><td>enables rendering calls (you want this o=
+n!)</td></tr>
+<tr><td>r_shadow_bumpscale_basetexture</td><td>0</td><td>generate fake bump=
+maps from diffuse textures at this bumpyness, try 4 to match tenebrae, high=
+er values increase depth, requires r_restart to take effect</td></tr>
+<tr><td>r_shadow_bumpscale_bumpmap</td><td>4</td><td>what magnitude to inte=
+rpret _bump.tga textures as, higher values increase depth, requires r_resta=
+rt to take effect</td></tr>
+<tr><td>r_shadow_culltriangles</td><td>1</td><td>performs more expensive te=
+sts to remove unnecessary triangles of lit surfaces</td></tr>
+<tr><td>r_shadow_debuglight</td><td>-1</td><td>renders only one light, for =
+level design purposes or debugging</td></tr>
+<tr><td>r_shadow_frontsidecasting</td><td>1</td><td>whether to cast shadows=
+ from illuminated triangles (front side of model) or unlit triangles (back =
+side of model)</td></tr>
+<tr><td>r_shadow_gloss2intensity</td><td>0.125</td><td>how bright the force=
+d flat gloss should look if r_shadow_gloss is 2</td></tr>
+<tr><td>r_shadow_gloss</td><td>1</td><td>0 disables gloss (specularity) ren=
+dering, 1 uses gloss if textures are found, 2 forces a flat metallic specul=
+ar effect on everything without textures (similar to tenebrae)</td></tr>
+<tr><td>r_shadow_glossexponent</td><td>32</td><td>how 'sharp' the gloss sho=
+uld appear (specular power)</td></tr>
+<tr><td>r_shadow_glossintensity</td><td>1</td><td>how bright textured gloss=
+maps should look if r_shadow_gloss is 1 or 2</td></tr>
+<tr><td>r_shadow_lightattenuationpower</td><td>0.5</td><td>changes attenuat=
+ion texture generation (does not affect r_glsl lighting)</td></tr>
+<tr><td>r_shadow_lightattenuationscale</td><td>1</td><td>changes attenuatio=
+n texture generation (does not affect r_glsl lighting)</td></tr>
+<tr><td>r_shadow_lightintensityscale</td><td>1</td><td>renders all world li=
+ghts brighter or darker</td></tr>
+<tr><td>r_shadow_lightradiusscale</td><td>1</td><td>renders all world light=
+s larger or smaller</td></tr>
+<tr><td>r_shadow_portallight</td><td>1</td><td>use portal culling to exactl=
+y determine lit triangles when compiling world lights</td></tr>
+<tr><td>r_shadow_projectdistance</td><td>1000000</td><td>how far to cast sh=
+adows</td></tr>
+<tr><td>r_shadow_realtime_dlight</td><td>1</td><td>enables rendering of dyn=
+amic lights such as explosions and rocket light</td></tr>
+<tr><td>r_shadow_realtime_dlight_portalculling</td><td>0</td><td>enables po=
+rtal optimization on dynamic lights (slow!)</td></tr>
+<tr><td>r_shadow_realtime_dlight_shadows</td><td>1</td><td>enables renderin=
+g of shadows from dynamic lights</td></tr>
+<tr><td>r_shadow_realtime_dlight_svbspculling</td><td>0</td><td>enables svb=
+sp optimization on dynamic lights (very slow!)</td></tr>
+<tr><td>r_shadow_realtime_world</td><td>0</td><td>enables rendering of full=
+ world lighting (whether loaded from the map, or a .rtlights file, or a .en=
+t file, or a .lights file produced by hlight)</td></tr>
+<tr><td>r_shadow_realtime_world_compile</td><td>1</td><td>enables compilati=
+on of world lights for higher performance rendering</td></tr>
+<tr><td>r_shadow_realtime_world_compileportalculling</td><td>1</td><td>enab=
+les portal-based culling optimization during compilation</td></tr>
+<tr><td>r_shadow_realtime_world_compileshadow</td><td>1</td><td>enables com=
+pilation of shadows from world lights for higher performance rendering</td>=
+</tr>
+<tr><td>r_shadow_realtime_world_compilesvbsp</td><td>1</td><td>enables svbs=
+p optimization during compilation</td></tr>
+<tr><td>r_shadow_realtime_world_dlightshadows</td><td>1</td><td>enables sha=
+dows from dynamic lights when using full world lighting</td></tr>
+<tr><td>r_shadow_realtime_world_lightmaps</td><td>0</td><td>brightness to r=
+ender lightmaps when using full world lighting, try 0.5 for a tenebrae-like=
+ appearance</td></tr>
+<tr><td>r_shadow_realtime_world_shadows</td><td>1</td><td>enables rendering=
+ of shadows from world lights</td></tr>
+<tr><td>r_shadow_scissor</td><td>1</td><td>use scissor optimization of ligh=
+t rendering (restricts rendering to the portion of the screen affected by t=
+he light)</td></tr>
+<tr><td>r_shadow_shadow_polygonfactor</td><td>0</td><td>how much to enlarge=
+ shadow volume polygons when rendering (should be 0!)</td></tr>
+<tr><td>r_shadow_shadow_polygonoffset</td><td>1</td><td>how much to push sh=
+adow volumes into the distance when rendering, to reduce chances of zfighti=
+ng artifacts (should not be less than 0)</td></tr>
+<tr><td>r_shadow_texture3d</td><td>1</td><td>use 3D voxel textures for sphe=
+rical attenuation rather than cylindrical (does not affect r_glsl lighting)=
+</td></tr>
+<tr><td>r_shadows</td><td>0</td><td>casts fake stencil shadows from models =
+onto the world (rtlights are unaffected by this)</td></tr>
+<tr><td>r_shadows_throwdistance</td><td>500</td><td>how far to cast shadows=
+ from models</td></tr>
+<tr><td>r_showcollisionbrushes</td><td>0</td><td>draws collision brushes in=
+ quake3 maps (mode 1), mode 2 disables rendering of world (trippy!)</td></t=
+r>
+<tr><td>r_showcollisionbrushes_polygonfactor</td><td>-1</td><td>expands out=
+ward the brush polygons a little bit, used to make collision brushes appear=
+ infront of walls</td></tr>
+<tr><td>r_showcollisionbrushes_polygonoffset</td><td>0</td><td>nudges brush=
+ polygon depth in hardware depth units, used to make collision brushes appe=
+ar infront of walls</td></tr>
+<tr><td>r_showdisabledepthtest</td><td>0</td><td>disables depth testing on =
+r_show* cvars, allowing you to see what hidden geometry the graphics card i=
+s processing</td></tr>
+<tr><td>r_showlighting</td><td>0</td><td>shows areas lit by lights, useful =
+for finding out why some areas of a map render slowly (bright orange =3D lo=
+ts of passes =3D slow), a value of 2 disables depth testing which can be in=
+teresting but not very useful</td></tr>
+<tr><td>r_shownormals</td><td>0</td><td>shows per-vertex surface normals an=
+d tangent vectors for bumpmapped lighting</td></tr>
+<tr><td>r_showshadowvolumes</td><td>0</td><td>shows areas shadowed by light=
+s, useful for finding out why some areas of a map render slowly (bright blu=
+e =3D lots of passes =3D slow), a value of 2 disables depth testing which c=
+an be interesting but not very useful</td></tr>
+<tr><td>r_showsurfaces</td><td>0</td><td>1 shows surfaces as different colo=
+rs, or a value of 2 shows triangle draw order (for analyzing whether meshes=
+ are optimized for vertex cache)</td></tr>
+<tr><td>r_showtris</td><td>0</td><td>shows triangle outlines, value control=
+s brightness (can be above 1)</td></tr>
+<tr><td>r_skeletal_debugbone</td><td>-1</td><td>development cvar for testin=
+g skeletal model code</td></tr>
+<tr><td>r_skeletal_debugbonecomponent</td><td>3</td><td>development cvar fo=
+r testing skeletal model code</td></tr>
+<tr><td>r_skeletal_debugbonevalue</td><td>100</td><td>development cvar for =
+testing skeletal model code</td></tr>
+<tr><td>r_skeletal_debugtranslatex</td><td>1</td><td>development cvar for t=
+esting skeletal model code</td></tr>
+<tr><td>r_skeletal_debugtranslatey</td><td>1</td><td>development cvar for t=
+esting skeletal model code</td></tr>
+<tr><td>r_skeletal_debugtranslatez</td><td>1</td><td>development cvar for t=
+esting skeletal model code</td></tr>
+<tr><td>r_sky</td><td>1</td><td>enables sky rendering (black otherwise)</td=
+></tr>
+<tr><td>r_skyscroll1</td><td>1</td><td>speed at which upper clouds layer sc=
+rolls in quake sky</td></tr>
+<tr><td>r_skyscroll2</td><td>2</td><td>speed at which lower clouds layer sc=
+rolls in quake sky</td></tr>
+<tr><td>r_smoothnormals_areaweighting</td><td>1</td><td>uses significantly =
+faster (and supposedly higher quality) area-weighted vertex normals and tan=
+gent vectors rather than summing normalized triangle normals and tangents</=
+td></tr>
+<tr><td>r_speeds</td><td>0</td><td>displays rendering statistics and per-su=
+bsystem timings</td></tr>
+<tr><td>r_stereo_redblue</td><td>0</td><td>red/blue anaglyph stereo glasses=
+ (note: most of these glasses are actually red/cyan, try that one too)</td>=
+</tr>
+<tr><td>r_stereo_redcyan</td><td>0</td><td>red/cyan anaglyph stereo glasses=
+, the kind given away at drive-in movies like Creature From The Black Lagoo=
+n In 3D</td></tr>
+<tr><td>r_stereo_redgreen</td><td>0</td><td>red/green anaglyph stereo glass=
+es (for those who don't mind yellow)</td></tr>
+<tr><td>r_stereo_separation</td><td>4</td><td>separation of eyes in the wor=
+ld (try negative values too)</td></tr>
+<tr><td>r_stereo_sidebyside</td><td>0</td><td>side by side views (for those=
+ who can't afford glasses but can afford eye strain)</td></tr>
+<tr><td>r_subdivide_size</td><td>128</td><td>how large water polygons shoul=
+d be (smaller values produce more polygons which give better warping effect=
+s)</td></tr>
+<tr><td>r_subdivisions_collision_maxtess</td><td>1024</td><td>maximum numbe=
+r of subdivisions (prevents curves beyond a certain detail level, limits sm=
+oothing)</td></tr>
+<tr><td>r_subdivisions_collision_maxvertices</td><td>4225</td><td>maximum v=
+ertices allowed per subdivided curve</td></tr>
+<tr><td>r_subdivisions_collision_mintess</td><td>1</td><td>minimum number o=
+f subdivisions (values above 1 will smooth curves that don't need it)</td><=
+/tr>
+<tr><td>r_subdivisions_collision_tolerance</td><td>15</td><td>maximum error=
+ tolerance on curve subdivision for collision purposes (usually a larger er=
+ror tolerance than for rendering)</td></tr>
+<tr><td>r_subdivisions_maxtess</td><td>1024</td><td>maximum number of subdi=
+visions (prevents curves beyond a certain detail level, limits smoothing)</=
+td></tr>
+<tr><td>r_subdivisions_maxvertices</td><td>65536</td><td>maximum vertices a=
+llowed per subdivided curve</td></tr>
+<tr><td>r_subdivisions_mintess</td><td>1</td><td>minimum number of subdivis=
+ions (values above 1 will smooth curves that don't need it)</td></tr>
+<tr><td>r_subdivisions_tolerance</td><td>4</td><td>maximum error tolerance =
+on curve subdivision for rendering purposes (in other words, the curves wil=
+l be given as many polygons as necessary to represent curves at this qualit=
+y)</td></tr>
+<tr><td>r_test</td><td>0</td><td>internal development use only, leave it al=
+one (usually does nothing anyway)</td></tr>
+<tr><td>r_textshadow</td><td>0</td><td>draws a shadow on all text to improv=
+e readability</td></tr>
+<tr><td>r_textureunits</td><td>32</td><td>number of hardware texture units =
+reported by driver (note: setting this to 1 turns off gl_combine)</td></tr>
+<tr><td>r_useportalculling</td><td>1</td><td>use advanced portal culling vi=
+sibility method to improve performance over just Potentially Visible Set, p=
+rovides an even more significant speed improvement in unvised maps</td></tr=
+>
+<tr><td>r_wateralpha</td><td>1</td><td>opacity of water polygons</td></tr>
+<tr><td>r_waterscroll</td><td>1</td><td>makes water scroll around, value co=
+ntrols how much</td></tr>
+<tr><td>r_waterwarp</td><td>1</td><td>warp view while underwater</td></tr>
+<tr><td>rcon_address</td><td></td><td>server address to send rcon commands =
+to (when not connected to a server)</td></tr>
+<tr><td>rcon_password</td><td></td><td>password to authenticate rcon comman=
+ds</td></tr>
+<tr><td>registered</td><td>0</td><td>indicates if this is running registere=
+d quake (whether gfx/pop.lmp was found)</td></tr>
+<tr><td>samelevel</td><td>0</td><td>repeats same level if level ends (due t=
+o timelimit or someone hitting an exit)</td></tr>
+<tr><td>saved1</td><td>0</td><td>unused cvar in quake that is saved to conf=
+ig.cfg on exit, can be used by mods</td></tr>
+<tr><td>saved2</td><td>0</td><td>unused cvar in quake that is saved to conf=
+ig.cfg on exit, can be used by mods</td></tr>
+<tr><td>saved3</td><td>0</td><td>unused cvar in quake that is saved to conf=
+ig.cfg on exit, can be used by mods</td></tr>
+<tr><td>saved4</td><td>0</td><td>unused cvar in quake that is saved to conf=
+ig.cfg on exit, can be used by mods</td></tr>
+<tr><td>savedgamecfg</td><td>0</td><td>unused cvar in quake that is saved t=
+o config.cfg on exit, can be used by mods</td></tr>
+<tr><td>sbar_alpha_bg</td><td>0.4</td><td>opacity value of the statusbar ba=
+ckground image</td></tr>
+<tr><td>sbar_alpha_fg</td><td>1</td><td>opacity value of the statusbar weap=
+on/item icons and numbers</td></tr>
+<tr><td>scr_centertime</td><td>2</td><td>how long centerprint messages show=
+</td></tr>
+<tr><td>scr_conalpha</td><td>1</td><td>opacity of console background</td></=
+tr>
+<tr><td>scr_conbrightness</td><td>1</td><td>brightness of console backgroun=
+d (0 =3D black, 1 =3D image)</td></tr>
+<tr><td>scr_conforcewhiledisconnected</td><td>1</td><td>forces fullscreen c=
+onsole while disconnected</td></tr>
+<tr><td>scr_menuforcewhiledisconnected</td><td>0</td><td>forces menu while =
+disconnected</td></tr>
+<tr><td>scr_printspeed</td><td>8</td><td>speed of intermission printing (ep=
+isode end texts)</td></tr>
+<tr><td>scr_refresh</td><td>1</td><td>allows you to completely shut off ren=
+dering for benchmarking purposes</td></tr>
+<tr><td>scr_screenshot_gammaboost</td><td>1</td><td>gamma correction on sav=
+ed screenshots and videos, 1.0 saves unmodified images</td></tr>
+<tr><td>scr_screenshot_jpeg</td><td>1</td><td>save jpeg instead of targa</t=
+d></tr>
+<tr><td>scr_screenshot_jpeg_quality</td><td>0.9</td><td>image quality of sa=
+ved jpeg</td></tr>
+<tr><td>scr_screenshot_name</td><td>dp</td><td>prefix name for saved screen=
+shots (changes based on -game commandline, as well as which game mode is ru=
+nning)</td></tr>
+<tr><td>scr_stipple</td><td>0</td><td>interlacing-like stippling of the dis=
+play</td></tr>
+<tr><td>scr_zoomwindow</td><td>0</td><td>displays a zoomed in overlay windo=
+w</td></tr>
+<tr><td>scr_zoomwindow_fov</td><td>20</td><td>fov of zoom window</td></tr>
+<tr><td>scr_zoomwindow_viewsizex</td><td>20</td><td>horizontal viewsize of =
+zoom window</td></tr>
+<tr><td>scr_zoomwindow_viewsizey</td><td>20</td><td>vertical viewsize of zo=
+om window</td></tr>
+<tr><td>scratch1</td><td>0</td><td>unused cvar in quake, can be used by mod=
+s</td></tr>
+<tr><td>scratch2</td><td>0</td><td>unused cvar in quake, can be used by mod=
+s</td></tr>
+<tr><td>scratch3</td><td>0</td><td>unused cvar in quake, can be used by mod=
+s</td></tr>
+<tr><td>scratch4</td><td>0</td><td>unused cvar in quake, can be used by mod=
+s</td></tr>
+<tr><td>sensitivity</td><td>3</td><td>mouse speed multiplier</td></tr>
+<tr><td>showbrand</td><td>0</td><td>shows gfx/brand.tga in a corner of the =
+screen (different values select different positions, including centered)</t=
+d></tr>
+<tr><td>showdate</td><td>0</td><td>shows current date (useful on screenshot=
+s)</td></tr>
+<tr><td>showdate_format</td><td>%Y-%m-%d</td><td>format string for date</td=
+></tr>
+<tr><td>showfps</td><td>0</td><td>shows your rendered fps (frames per secon=
+d)</td></tr>
+<tr><td>showpause</td><td>1</td><td>show pause icon when game is paused</td=
+></tr>
+<tr><td>showram</td><td>1</td><td>show ram icon if low on surface cache mem=
+ory (not used)</td></tr>
+<tr><td>showtime</td><td>0</td><td>shows current time of day (useful on scr=
+eenshots)</td></tr>
+<tr><td>showtime_format</td><td>%H:%M:%S</td><td>format string for time of =
+day</td></tr>
+<tr><td>showturtle</td><td>0</td><td>show turtle icon when framerate is too=
+ low (not used)</td></tr>
+<tr><td>skill</td><td>1</td><td>difficulty level of game, affects monster l=
+ayouts in levels, 0 =3D easy, 1 =3D normal, 2 =3D hard, 3 =3D nightmare (sa=
+me layout as hard but monsters fire twice)</td></tr>
+<tr><td>skin</td><td></td><td>QW player skin name (example: base)</td></tr>
+<tr><td>slowmo</td><td>1.0</td><td>controls game speed, 0.5 is half speed, =
+2 is double speed</td></tr>
+<tr><td>snd_channellayout</td><td>0</td><td>channel layout. Can be 0 (auto =
+- snd_restart needed), 1 (standard layout), or 2 (ALSA layout)</td></tr>
+<tr><td>snd_channels</td><td>2</td><td>number of channels for the sound oup=
+ut (2 for stereo; up to 8 supported for 3D sound)</td></tr>
+<tr><td>snd_initialized</td><td>0</td><td>indicates the sound subsystem is =
+active</td></tr>
+<tr><td>snd_noextraupdate</td><td>0</td><td>disables extra sound mixer call=
+s that are meant to reduce the chance of sound breakup at very low framerat=
+es</td></tr>
+<tr><td>snd_precache</td><td>1</td><td>loads sounds before they are used</t=
+d></tr>
+<tr><td>snd_show</td><td>0</td><td>shows some statistics about sound mixing=
+</td></tr>
+<tr><td>snd_soundradius</td><td>1000</td><td>radius of weapon sounds and ot=
+her standard sound effects (monster idle noises are half this radius and fl=
+ickering light noises are one third of this radius)</td></tr>
+<tr><td>snd_speed</td><td>48000</td><td>sound output frequency, in hertz</t=
+d></tr>
+<tr><td>snd_staticvolume</td><td>1</td><td>volume of ambient sound effects =
+(such as swampy sounds at the start of e1m2)</td></tr>
+<tr><td>snd_streaming</td><td>1</td><td>enables keeping compressed ogg soun=
+d files compressed, decompressing them only as needed, otherwise they will =
+be decompressed completely at load (may use a lot of memory)</td></tr>
+<tr><td>snd_swapstereo</td><td>0</td><td>swaps left/right speakers for old =
+ISA soundblaster cards</td></tr>
+<tr><td>snd_width</td><td>2</td><td>sound output precision, in bytes (1 and=
+ 2 supported)</td></tr>
+<tr><td>sv_accelerate</td><td>10</td><td>rate at which a player accelerates=
+ to sv_maxspeed</td></tr>
+<tr><td>sv_adminnick</td><td></td><td>nick name to use for admin messages i=
+nstead of host name</td></tr>
+<tr><td>sv_aim</td><td>2</td><td>maximum cosine angle for quake's vertical =
+autoaim, a value above 1 completely disables the autoaim, quake used 0.93</=
+td></tr>
+<tr><td>sv_airaccelerate</td><td>-1</td><td>rate at which a player accelera=
+tes to sv_maxairspeed while in the air, if less than 0 the sv_accelerate va=
+riable is used instead</td></tr>
+<tr><td>sv_allowdownloads</td><td>1</td><td>whether to allow clients to dow=
+nload files from the server (does not affect http downloads)</td></tr>
+<tr><td>sv_allowdownloads_archive</td><td>0</td><td>whether to allow downlo=
+ads of archives (pak/pk3)</td></tr>
+<tr><td>sv_allowdownloads_config</td><td>0</td><td>whether to allow downloa=
+ds of config files (cfg)</td></tr>
+<tr><td>sv_allowdownloads_dlcache</td><td>0</td><td>whether to allow downlo=
+ads of dlcache files (dlcache/)</td></tr>
+<tr><td>sv_allowdownloads_inarchive</td><td>0</td><td>whether to allow down=
+loads from archives (pak/pk3)</td></tr>
+<tr><td>sv_areagrid_mingridsize</td><td>64</td><td>minimum areagrid cell si=
+ze, smaller values work better for lots of small objects, higher values for=
+ large objects</td></tr>
+<tr><td>sv_cheats</td><td>0</td><td>enables cheat commands in any game, and=
+ cheat impulses in dpmod</td></tr>
+<tr><td>sv_clmovement_enable</td><td>1</td><td>whether to allow clients to =
+use cl_movement prediction, which can cause choppy movement on the server w=
+hich may annoy other players</td></tr>
+<tr><td>sv_clmovement_minping</td><td>0</td><td>if client ping is below thi=
+s time in milliseconds, then their ability to use cl_movement prediction is=
+ disabled for a while (as they don't need it)</td></tr>
+<tr><td>sv_clmovement_minping_disabletime</td><td>1000</td><td>when client =
+falls below minping, disable their prediction for this many milliseconds (s=
+hould be at least 1000 or else their prediction may turn on/off frequently)=
+</td></tr>
+<tr><td>sv_clmovement_waitforinput</td><td>16</td><td>when a client does no=
+t send input for this many frames, force them to move anyway (unlike QuakeW=
+orld)</td></tr>
+<tr><td>sv_cullentities_nevercullbmodels</td><td>0</td><td>if enabled the c=
+lients are always notified of moving doors and lifts and other submodels of=
+ world (warning: eats a lot of network bandwidth on some levels!)</td></tr>
+<tr><td>sv_cullentities_pvs</td><td>1</td><td>fast but loose culling of hid=
+den entities</td></tr>
+<tr><td>sv_cullentities_stats</td><td>0</td><td>displays stats on network e=
+ntities culled by various methods for each client</td></tr>
+<tr><td>sv_cullentities_trace</td><td>0</td><td>somewhat slow but very tigh=
+t culling of hidden entities, minimizes network traffic and makes wallhack =
+cheats useless</td></tr>
+<tr><td>sv_cullentities_trace_delay</td><td>1</td><td>number of seconds unt=
+il the entity gets actually culled</td></tr>
+<tr><td>sv_cullentities_trace_enlarge</td><td>0</td><td>box enlargement for=
+ entity culling</td></tr>
+<tr><td>sv_cullentities_trace_prediction</td><td>1</td><td>also trace from =
+the predicted player position</td></tr>
+<tr><td>sv_cullentities_trace_samples</td><td>1</td><td>number of samples t=
+o test for entity culling</td></tr>
+<tr><td>sv_cullentities_trace_samples_extra</td><td>2</td><td>number of sam=
+ples to test for entity culling when the entity affects its surroundings by=
+ e.g. dlight</td></tr>
+<tr><td>sv_curl_defaulturl</td><td></td><td>default autodownload source URL=
+</td></tr>
+<tr><td>sv_curl_serverpackages</td><td></td><td>list of required files for =
+the clients, separated by spaces</td></tr>
+<tr><td>sv_debugmove</td><td>0</td><td>disables collision detection optimiz=
+ations for debugging purposes</td></tr>
+<tr><td>sv_echobprint</td><td>1</td><td>prints gamecode bprint() calls to s=
+erver console</td></tr>
+<tr><td>sv_entpatch</td><td>1</td><td>enables loading of .ent files to over=
+ride entities in the bsp (for example Threewave CTF server pack contains .e=
+nt patch files enabling play of CTF on id1 maps)</td></tr>
+<tr><td>sv_fixedframeratesingleplayer</td><td>0</td><td>allows you to use s=
+erver-style timing system in singleplayer (don't run faster than sys_ticrat=
+e)</td></tr>
+<tr><td>sv_freezenonclients</td><td>0</td><td>freezes time, except for play=
+ers, allowing you to walk around and take screenshots of explosions</td></t=
+r>
+<tr><td>sv_friction</td><td>4</td><td>how fast you slow down</td></tr>
+<tr><td>sv_gameplayfix_blowupfallenzombies</td><td>1</td><td>causes findrad=
+ius to detect SOLID_NOT entities such as zombies and corpses on the floor, =
+allowing splash damage to apply to them</td></tr>
+<tr><td>sv_gameplayfix_droptofloorstartsolid</td><td>1</td><td>prevents ite=
+ms and monsters that start in a solid area from falling out of the level (m=
+akes droptofloor treat trace_startsolid as an acceptable outcome)</td></tr>
+<tr><td>sv_gameplayfix_findradiusdistancetobox</td><td>1</td><td>causes fin=
+dradius to check the distance to the corner of a box rather than the center=
+ of the box, makes findradius detect bmodels such as very large doors that =
+would otherwise be unaffected by splash damage</td></tr>
+<tr><td>sv_gameplayfix_grenadebouncedownslopes</td><td>1</td><td>prevents M=
+OVETYPE_BOUNCE (grenades) from getting stuck when fired down a downward slo=
+ping surface</td></tr>
+<tr><td>sv_gameplayfix_noairborncorpse</td><td>1</td><td>causes entities (c=
+orpses) sitting ontop of moving entities (players) to fall when the moving =
+entity (player) is no longer supporting them</td></tr>
+<tr><td>sv_gameplayfix_qwplayerphysics</td><td>1</td><td>changes water jump=
+ing to make it easier to get out of water, and prevents friction on landing=
+ when bunnyhopping</td></tr>
+<tr><td>sv_gameplayfix_setmodelrealbox</td><td>1</td><td>fixes a bug in Qua=
+ke that made setmodel always set the entity box to ('-16 -16 -16', '16 16 1=
+6') rather than properly checking the model box, breaks some poorly coded m=
+ods</td></tr>
+<tr><td>sv_gameplayfix_stepdown</td><td>0</td><td>attempts to step down sta=
+irs, not just up them (prevents the familiar thud..thud..thud.. when runnin=
+g down stairs and slopes)</td></tr>
+<tr><td>sv_gameplayfix_stepwhilejumping</td><td>1</td><td>applies step-up o=
+nto a ledge even while airborn, useful if you would otherwise just-miss the=
+ floor when running across small areas with gaps (for instance running acro=
+ss the moving platforms in dm2, or jumping to the megahealth and red armor =
+in dm2 rather than using the bridge)</td></tr>
+<tr><td>sv_gameplayfix_swiminbmodels</td><td>1</td><td>causes pointcontents=
+ (used to determine if you are in a liquid) to check bmodel entities as wel=
+l as the world model, so you can swim around in (possibly moving) water bmo=
+del entities</td></tr>
+<tr><td>sv_gameplayfix_upwardvelocityclearsongroundflag</td><td>1</td><td>p=
+revents monsters, items, and most other objects from being stuck to the flo=
+or when pushed around by damage, and other situations in mods</td></tr>
+<tr><td>sv_gravity</td><td>800</td><td>how fast you fall (512 =3D roughly e=
+arth gravity)</td></tr>
+<tr><td>sv_heartbeatperiod</td><td>120</td><td>how often to send heartbeat =
+in seconds (only used if sv_public is 1)</td></tr>
+<tr><td>sv_idealpitchscale</td><td>0.8</td><td>how much to look up/down slo=
+pes and stairs when not using freelook</td></tr>
+<tr><td>sv_jumpstep</td><td>0</td><td>whether you can step up while jumping=
+ (sv_gameplayfix_stepwhilejumping must also be 1)</td></tr>
+<tr><td>sv_master1</td><td></td><td>user-chosen master server 1</td></tr>
+<tr><td>sv_master2</td><td></td><td>user-chosen master server 2</td></tr>
+<tr><td>sv_master3</td><td></td><td>user-chosen master server 3</td></tr>
+<tr><td>sv_master4</td><td></td><td>user-chosen master server 4</td></tr>
+<tr><td>sv_maxairspeed</td><td>30</td><td>maximum speed a player can accele=
+rate to when airborn (note that it is possible to completely stop by moving=
+ the opposite direction)</td></tr>
+<tr><td>sv_maxrate</td><td>10000</td><td>upper limit on client rate cvar, s=
+hould reflect your network connection quality</td></tr>
+<tr><td>sv_maxspeed</td><td>320</td><td>maximum speed a player can accelera=
+te to when on ground (can be exceeded by tricks)</td></tr>
+<tr><td>sv_maxvelocity</td><td>2000</td><td>universal speed limit on all en=
+tities</td></tr>
+<tr><td>sv_newflymove</td><td>0</td><td>enables simpler/buggier player phys=
+ics (not recommended)</td></tr>
+<tr><td>sv_nostep</td><td>0</td><td>prevents MOVETYPE_STEP entities (monste=
+rs) from moving</td></tr>
+<tr><td>sv_playerphysicsqc</td><td>1</td><td>enables QuakeC function to ove=
+rride player physics</td></tr>
+<tr><td>sv_progs</td><td>progs.dat</td><td>selects which quakec progs.dat f=
+ile to run</td></tr>
+<tr><td>sv_protocolname</td><td>DP7</td><td>selects network protocol to hos=
+t for (values include QUAKE, QUAKEDP, NEHAHRAMOVIE, DP1 and up)</td></tr>
+<tr><td>sv_public</td><td>0</td><td>1: advertises this server on the master=
+ server (so that players can find it in the server browser); 0: allow direc=
+t queries only; -1: do not respond to direct queries; -2: do not allow anyo=
+ne to connect</td></tr>
+<tr><td>sv_qwmaster1</td><td></td><td>user-chosen qwmaster server 1</td></t=
+r>
+<tr><td>sv_qwmaster2</td><td></td><td>user-chosen qwmaster server 2</td></t=
+r>
+<tr><td>sv_qwmaster3</td><td></td><td>user-chosen qwmaster server 3</td></t=
+r>
+<tr><td>sv_qwmaster4</td><td></td><td>user-chosen qwmaster server 4</td></t=
+r>
+<tr><td>sv_random_seed</td><td></td><td>random seed; when set, on every map=
+ start this random seed is used to initialize the random number generator. =
+Don't touch it unless for benchmarking or debugging</td></tr>
+<tr><td>sv_ratelimitlocalplayer</td><td>0</td><td>whether to apply rate lim=
+iting to the local player in a listen server (only useful for testing)</td>=
+</tr>
+<tr><td>sv_sound_land</td><td>demon/dland2.wav</td><td>sound to play when M=
+OVETYPE_STEP entity hits the ground at high speed (empty cvar disables the =
+sound)</td></tr>
+<tr><td>sv_sound_watersplash</td><td>misc/h2ohit1.wav</td><td>sound to play=
+ when MOVETYPE_FLY/TOSS/BOUNCE/STEP entity enters or leaves water (empty cv=
+ar disables the sound)</td></tr>
+<tr><td>sv_stepheight</td><td>18</td><td>how high you can step up (TW_SV_ST=
+EPCONTROL extension)</td></tr>
+<tr><td>sv_stopspeed</td><td>100</td><td>how fast you come to a complete st=
+op</td></tr>
+<tr><td>sv_wallfriction</td><td>1</td><td>how much you slow down when slidi=
+ng along a wall</td></tr>
+<tr><td>sv_wateraccelerate</td><td>-1</td><td>rate at which a player accele=
+rates to sv_maxspeed while in the air, if less than 0 the sv_accelerate var=
+iable is used instead</td></tr>
+<tr><td>sv_waterfriction</td><td>-1</td><td>how fast you slow down, if less=
+ than 0 the sv_friction variable is used instead</td></tr>
+<tr><td>sys_colortranslation</td><td>0</td><td>terminal console color trans=
+lation (supported values: 0 =3D strip color codes, 1 =3D translate to ANSI =
+codes, 2 =3D no translation)</td></tr>
+<tr><td>sys_colortranslation</td><td>1</td><td>terminal console color trans=
+lation (supported values: 0 =3D strip color codes, 1 =3D translate to ANSI =
+codes, 2 =3D no translation)</td></tr>
+<tr><td>sys_specialcharactertranslation</td><td>1</td><td>terminal console =
+conchars to ASCII translation (set to 0 if your conchars.tga is for an 8bit=
+ character set or if you want raw output)</td></tr>
+<tr><td>sys_ticrate</td><td>0.05</td><td>how long a server frame is in seco=
+nds, 0.05 is 20fps server rate, 0.1 is 10fps (can not be set higher than 0.=
+1), 0 runs as many server frames as possible (makes games against bots a li=
+ttle smoother, overwhelms network players)</td></tr>
+<tr><td>sys_usetimegettime</td><td>1</td><td>use windows timeGetTime functi=
+on (which has issues on some motherboards) for timing rather than QueryPerf=
+ormanceCounter timer (which has issues on multicore/multiprocessor machines=
+ and processors which are designed to conserve power)</td></tr>
+<tr><td>team</td><td>none</td><td>QW team (4 character limit, example: blue=
+)</td></tr>
+<tr><td>teamplay</td><td>0</td><td>teamplay mode, values depend on mod but =
+typically 0 =3D no teams, 1 =3D no team damage no self damage, 2 =3D team d=
+amage and self damage, some mods support 3 =3D no team damage but can damag=
+e self</td></tr>
+<tr><td>temp1</td><td>0</td><td>general cvar for mods to use, in stock id1 =
+this selects which death animation to use on players (0 =3D random death, o=
+ther values select specific death scenes)</td></tr>
+<tr><td>timeformat</td><td>[%Y-%m-%d %H:%M:%S]</td><td>time format to use o=
+n timestamped console messages</td></tr>
+<tr><td>timelimit</td><td>0</td><td>ends level at this time (in minutes)</t=
+d></tr>
+<tr><td>timestamps</td><td>0</td><td>prints timestamps on console messages<=
+/td></tr>
+<tr><td>v_brightness</td><td>0</td><td>brightness of black, useful for moni=
+tors that are too dark</td></tr>
+<tr><td>v_centermove</td><td>0.15</td><td>how long before the view begins t=
+o center itself (if freelook/+mlook/+jlook/+klook are off)</td></tr>
+<tr><td>v_centerspeed</td><td>500</td><td>how fast the view centers itself<=
+/td></tr>
+<tr><td>v_color_black_b</td><td>0</td><td>desired color of black</td></tr>
+<tr><td>v_color_black_g</td><td>0</td><td>desired color of black</td></tr>
+<tr><td>v_color_black_r</td><td>0</td><td>desired color of black</td></tr>
+<tr><td>v_color_enable</td><td>0</td><td>enables black-grey-white color cor=
+rection curve controls</td></tr>
+<tr><td>v_color_grey_b</td><td>0.5</td><td>desired color of grey</td></tr>
+<tr><td>v_color_grey_g</td><td>0.5</td><td>desired color of grey</td></tr>
+<tr><td>v_color_grey_r</td><td>0.5</td><td>desired color of grey</td></tr>
+<tr><td>v_color_white_b</td><td>1</td><td>desired color of white</td></tr>
+<tr><td>v_color_white_g</td><td>1</td><td>desired color of white</td></tr>
+<tr><td>v_color_white_r</td><td>1</td><td>desired color of white</td></tr>
+<tr><td>v_contrast</td><td>1</td><td>brightness of white (values above 1 gi=
+ve a brighter image with increased color saturation, unlike v_gamma)</td></=
+tr>
+<tr><td>v_deathtilt</td><td>1</td><td>whether to use sideways view when dea=
+d</td></tr>
+<tr><td>v_deathtiltangle</td><td>80</td><td>what roll angle to use when til=
+ting the view while dead</td></tr>
+<tr><td>v_gamma</td><td>1</td><td>inverse gamma correction value, a brightn=
+ess effect that does not affect white or black, and tends to make the image=
+ grey and dull</td></tr>
+<tr><td>v_hwgamma</td><td>1</td><td>enables use of hardware gamma correctio=
+n ramps if available (note: does not work very well on Windows2000 and abov=
+e), values are 0 =3D off, 1 =3D attempt to use hardware gamma, 2 =3D use ha=
+rdware gamma whether it works or not</td></tr>
+<tr><td>v_idlescale</td><td>0</td><td>how much of the quake 'drunken view' =
+effect to use</td></tr>
+<tr><td>v_ipitch_cycle</td><td>1</td><td>v_idlescale pitch speed</td></tr>
+<tr><td>v_ipitch_level</td><td>0.3</td><td>v_idlescale pitch amount</td></t=
+r>
+<tr><td>v_iroll_cycle</td><td>0.5</td><td>v_idlescale roll speed</td></tr>
+<tr><td>v_iroll_level</td><td>0.1</td><td>v_idlescale roll amount</td></tr>
+<tr><td>v_iyaw_cycle</td><td>2</td><td>v_idlescale yaw speed</td></tr>
+<tr><td>v_iyaw_level</td><td>0.3</td><td>v_idlescale yaw amount</td></tr>
+<tr><td>v_kickpitch</td><td>0.6</td><td>how much a view kick from damage pi=
+tches your view</td></tr>
+<tr><td>v_kickroll</td><td>0.6</td><td>how much a view kick from damage rol=
+ls your view</td></tr>
+<tr><td>v_kicktime</td><td>0.5</td><td>how long a view kick from damage las=
+ts</td></tr>
+<tr><td>v_psycho</td><td>0</td><td>easter egg (does not work on Windows2000=
+ or above)</td></tr>
+<tr><td>vid_bitsperpixel</td><td>32</td><td>how many bits per pixel to rend=
+er at (32 or 16, 32 is recommended)</td></tr>
+<tr><td>vid_conheight</td><td>480</td><td>virtual height of 2D graphics sys=
+tem</td></tr>
+<tr><td>vid_conwidth</td><td>640</td><td>virtual width of 2D graphics syste=
+m</td></tr>
+<tr><td>vid_dga</td><td>1</td><td>make use of DGA mouse input</td></tr>
+<tr><td>vid_dga_mouseaccel</td><td>1</td><td>speed of mouse when using DGA =
+mouse input</td></tr>
+<tr><td>vid_fullscreen</td><td>1</td><td>use fullscreen (1) or windowed (0)=
+</td></tr>
+<tr><td>vid_grabkeyboard</td><td>0</td><td>whether to grab the keyboard whe=
+n mouse is active (prevents use of volume control keys, music player keys, =
+etc on some keyboards)</td></tr>
+<tr><td>vid_hardwaregammasupported</td><td>1</td><td>indicates whether hard=
+ware gamma is supported (updated by attempts to set hardware gamma ramps)</=
+td></tr>
+<tr><td>vid_height</td><td>480</td><td>resolution</td></tr>
+<tr><td>vid_minheight</td><td>0</td><td>minimum vid_height that is acceptab=
+le (to be set in default.cfg in mods)</td></tr>
+<tr><td>vid_minwidth</td><td>0</td><td>minimum vid_width that is acceptable=
+ (to be set in default.cfg in mods)</td></tr>
+<tr><td>vid_mouse</td><td>1</td><td>whether to use the mouse in windowed mo=
+de (fullscreen always does)</td></tr>
+<tr><td>vid_pixelheight</td><td>1</td><td>adjusts vertical field of vision =
+to account for non-square pixels (1280x1024 on a CRT monitor for example)</=
+td></tr>
+<tr><td>vid_refreshrate</td><td>60</td><td>refresh rate to use, in hz (high=
+er values flicker less, if supported by your monitor)</td></tr>
+<tr><td>vid_stereobuffer</td><td>0</td><td>enables 'quad-buffered' stereo r=
+endering for stereo shutterglasses, HMD (head mounted display) devices, or =
+polarized stereo LCDs, if supported by your drivers</td></tr>
+<tr><td>vid_vsync</td><td>0</td><td>sync to vertical blank, prevents 'teari=
+ng' (seeing part of one frame and part of another on the screen at the same=
+ time), automatically disabled when doing timedemo benchmarks</td></tr>
+<tr><td>vid_width</td><td>640</td><td>resolution</td></tr>
+<tr><td>viewsize</td><td>100</td><td>how large the view should be, 110 disa=
+bles inventory bar, 120 disables status bar</td></tr>
+<tr><td>volume</td><td>0.7</td><td>volume of sound effects</td></tr>
+</tbody></table>
+
+
+
+<a name=3D"ConsoleCommands"></a>
+<h2>Full console command list as of 2007-03-11</h2>
+<table>
+<tbody><tr><td>+attack</td><td>begin firing</td></tr>
+<tr><td>+back</td><td>move backward</td></tr>
+<tr><td>+button3</td><td>activate button3 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button4</td><td>activate button4 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button5</td><td>activate button5 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button6</td><td>activate button6 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button7</td><td>activate button7 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button8</td><td>activate button8 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button9</td><td>activate button9 (behavior depends on mod)</td></t=
+r>
+<tr><td>+button10</td><td>activate button10 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+button11</td><td>activate button11 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+button12</td><td>activate button12 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+button13</td><td>activate button13 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+button14</td><td>activate button14 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+button15</td><td>activate button15 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+button16</td><td>activate button16 (behavior depends on mod)</td><=
+/tr>
+<tr><td>+forward</td><td>move forward</td></tr>
+<tr><td>+jump</td><td>jump</td></tr>
+<tr><td>+klook</td><td>activate keyboard looking mode, do not recenter view=
+</td></tr>
+<tr><td>+left</td><td>turn left</td></tr>
+<tr><td>+lookdown</td><td>look downward</td></tr>
+<tr><td>+lookup</td><td>look upward</td></tr>
+<tr><td>+mlook</td><td>activate mouse looking mode, do not recenter view</t=
+d></tr>
+<tr><td>+movedown</td><td>swim downward</td></tr>
+<tr><td>+moveleft</td><td>strafe left</td></tr>
+<tr><td>+moveright</td><td>strafe right</td></tr>
+<tr><td>+moveup</td><td>swim upward</td></tr>
+<tr><td>+right</td><td>turn right</td></tr>
+<tr><td>+showscores</td><td>show scoreboard</td></tr>
+<tr><td>+speed</td><td>activate run mode (faster movement and turning)</td>=
+</tr>
+<tr><td>+strafe</td><td>activate strafing mode (move instead of turn)</td><=
+/tr>
+<tr><td>+use</td><td>use something (may be used by some mods)</td></tr>
+<tr><td>-attack</td><td>stop firing</td></tr>
+<tr><td>-back</td><td>stop moving backward</td></tr>
+<tr><td>-button3</td><td>deactivate button3</td></tr>
+<tr><td>-button4</td><td>deactivate button4</td></tr>
+<tr><td>-button5</td><td>deactivate button5</td></tr>
+<tr><td>-button6</td><td>deactivate button6</td></tr>
+<tr><td>-button7</td><td>deactivate button7</td></tr>
+<tr><td>-button8</td><td>deactivate button8</td></tr>
+<tr><td>-button9</td><td>deactivate button9</td></tr>
+<tr><td>-button10</td><td>deactivate button10</td></tr>
+<tr><td>-button11</td><td>deactivate button11</td></tr>
+<tr><td>-button12</td><td>deactivate button12</td></tr>
+<tr><td>-button13</td><td>deactivate button13</td></tr>
+<tr><td>-button14</td><td>deactivate button14</td></tr>
+<tr><td>-button15</td><td>deactivate button15</td></tr>
+<tr><td>-button16</td><td>deactivate button16</td></tr>
+<tr><td>-forward</td><td>stop moving forward</td></tr>
+<tr><td>-jump</td><td>end jump (so you can jump again)</td></tr>
+<tr><td>-klook</td><td>deactivate keyboard looking mode</td></tr>
+<tr><td>-left</td><td>stop turning left</td></tr>
+<tr><td>-lookdown</td><td>stop looking downward</td></tr>
+<tr><td>-lookup</td><td>stop looking upward</td></tr>
+<tr><td>-mlook</td><td>deactivate mouse looking mode</td></tr>
+<tr><td>-movedown</td><td>stop swimming downward</td></tr>
+<tr><td>-moveleft</td><td>stop strafing left</td></tr>
+<tr><td>-moveright</td><td>stop strafing right</td></tr>
+<tr><td>-moveup</td><td>stop swimming upward</td></tr>
+<tr><td>-right</td><td>stop turning right</td></tr>
+<tr><td>-showscores</td><td>hide scoreboard</td></tr>
+<tr><td>-speed</td><td>deactivate run mode</td></tr>
+<tr><td>-strafe</td><td>deactivate strafing mode</td></tr>
+<tr><td>-use</td><td>stop using something</td></tr>
+<tr><td>alias</td><td>create a script function (parameters are passed in as=
+ $1 through $9, and $* for all parameters)</td></tr>
+<tr><td>begin</td><td>signon 3 (client asks server to start sending entitie=
+s, and will go to signon 4 (playing) when the first entity update is receiv=
+ed)</td></tr>
+<tr><td>bestweapon</td><td>send an impulse number to server to select the f=
+irst usable weapon out of several (example: 87654321)</td></tr>
+<tr><td>bf</td><td>briefly flashes a bright color tint on view (used when i=
+tems are picked up)</td></tr>
+<tr><td>bind</td><td>binds a command to the specified key in bindmap 0</td>=
+</tr>
+<tr><td>bottomcolor</td><td>QW command to set bottom color without changing=
+ top color</td></tr>
+<tr><td>cd</td><td>execute a CD drive command (cd on/off/reset/remap/close/=
+play/loop/stop/pause/resume/eject/info) - use cd by itself for usage</td></=
+tr>
+<tr><td>cddrive</td><td>select an SDL-detected CD drive by number</td></tr>
+<tr><td>centerview</td><td>gradually recenter view (stop looking up/down)</=
+td></tr>
+<tr><td>changelevel</td><td>change to another level, bringing along all con=
+nected clients</td></tr>
+<tr><td>changing</td><td>sent by qw servers to tell client to wait for leve=
+l change</td></tr>
+<tr><td>cl_areastats</td><td>prints statistics on entity culling during col=
+lision traces</td></tr>
+<tr><td>cl_begindownloads</td><td>used internally by darkplaces client whil=
+e connecting (causes loading of models and sounds or triggers downloads for=
+ missing ones)</td></tr>
+<tr><td>cl_downloadbegin</td><td>(networking) informs client of download fi=
+le information, client replies with sv_startsoundload to begin the transfer=
+</td></tr>
+<tr><td>cl_downloadfinished</td><td>signals that a download has finished an=
+d provides the client with file size and crc to check its integrity</td></t=
+r>
+<tr><td>cl_particles_reloadeffects</td><td>reloads effectinfo.txt</td></tr>
+<tr><td>clear</td><td>clear console history</td></tr>
+<tr><td>cmd</td><td>send a console commandline to the server (used by some =
+mods)</td></tr>
+<tr><td>cmdlist</td><td>lists all console commands beginning with the speci=
+fied prefix</td></tr>
+<tr><td>color</td><td>change your player shirt and pants colors</td></tr>
+<tr><td>condump</td><td>output console history to a file (see also log_file=
+)</td></tr>
+<tr><td>connect</td><td>connect to a server by IP address or hostname</td><=
+/tr>
+<tr><td>curl</td><td>download data from an URL and add to search path</td><=
+/tr>
+<tr><td>cvar_lockdefaults</td><td>stores the current values of all cvars in=
+to their default values, only used once during startup after parsing defaul=
+t.cfg</td></tr>
+<tr><td>cvar_resettodefaults_all</td><td>sets all cvars to their locked def=
+ault values</td></tr>
+<tr><td>cvar_resettodefaults_nosaveonly</td><td>sets all non-saved cvars to=
+ their locked default values (variables that will not be saved to config.cf=
+g)</td></tr>
+<tr><td>cvar_resettodefaults_saveonly</td><td>sets all saved cvars to their=
+ locked default values (variables that will be saved to config.cfg)</td></t=
+r>
+<tr><td>cvarlist</td><td>lists all console variables beginning with the spe=
+cified prefix</td></tr>
+<tr><td>demos</td><td>restart looping demos defined by the last startdemos =
+command</td></tr>
+<tr><td>dir</td><td>list files in searchpath matching an * filename pattern=
+, one per line</td></tr>
+<tr><td>disconnect</td><td>disconnect from server (or disconnect all client=
+s if running a server)</td></tr>
+<tr><td>download</td><td>downloads a specified file from the server</td></t=
+r>
+<tr><td>echo</td><td>print a message to the console (useful in scripts)</td=
+></tr>
+<tr><td>entities</td><td>print information on network entities known to cli=
+ent</td></tr>
+<tr><td>envmap</td><td>render a cubemap (skybox) of the current scene</td><=
+/tr>
+<tr><td>exec</td><td>execute a script file</td></tr>
+<tr><td>fly</td><td>fly mode (flight)</td></tr>
+<tr><td>fog</td><td>set global fog parameters (density red green blue)</td>=
+</tr>
+<tr><td>force_centerview</td><td>recenters view (stops looking up/down)</td=
+></tr>
+<tr><td>fs_rescan</td><td>rescans filesystem for new pack archives and any =
+other changes</td></tr>
+<tr><td>fullinfo</td><td>allows client to modify their userinfo</td></tr>
+<tr><td>fullserverinfo</td><td>internal use only, sent by server to client =
+to update client's local copy of serverinfo string</td></tr>
+<tr><td>gamedir</td><td>changes active gamedir list (can take multiple argu=
+ments), not including base directory (example usage: gamedir ctf)</td></tr>
+<tr><td>give</td><td>alter inventory</td></tr>
+<tr><td>gl_texturemode</td><td>set texture filtering mode (GL_NEAREST, GL_L=
+INEAR, GL_LINEAR_MIPMAP_LINEAR, etc)</td></tr>
+<tr><td>god</td><td>god mode (invulnerability)</td></tr>
+<tr><td>heartbeat</td><td>send a heartbeat to the master server (updates yo=
+ur server information)</td></tr>
+<tr><td>help</td><td>open the help menu</td></tr>
+<tr><td>impulse</td><td>send an impulse number to server (select weapon, us=
+e item, etc)</td></tr>
+<tr><td>in_bind</td><td>binds a command to the specified key in the selecte=
+d bindmap</td></tr>
+<tr><td>in_bindmap</td><td>selects active foreground and background (used o=
+nly if a key is not bound in the foreground) bindmaps for typing</td></tr>
+<tr><td>in_unbind</td><td>removes command on the specified key in the selec=
+ted bindmap</td></tr>
+<tr><td>joyadvancedupdate</td><td>applies current joyadv* cvar settings to =
+the joystick driver</td></tr>
+<tr><td>kick</td><td>kick a player off the server by number or name</td></t=
+r>
+<tr><td>kill</td><td>die instantly</td></tr>
+<tr><td>load</td><td>load a saved game file</td></tr>
+<tr><td>loadconfig</td><td>reset everything and reload configs</td></tr>
+<tr><td>loadsky</td><td>load a skybox by basename (for example loadsky mtns=
+un_ loads mtnsun_ft.tga and so on)</td></tr>
+<tr><td>locs_add</td><td>add a point or box location (usage: x y z[ x y z] =
+\</td></tr>
+<tr><td>locs_clear</td><td>remove all loc points/boxes</td></tr>
+<tr><td>locs_reload</td><td>reload .loc file for this map</td></tr>
+<tr><td>locs_removenearest</td><td>remove the nearest point or box (note: y=
+ou need to be very near a box to remove it)</td></tr>
+<tr><td>locs_save</td><td>save .loc file for this map containing currently =
+defined points and boxes</td></tr>
+<tr><td>ls</td><td>list files in searchpath matching an * filename pattern,=
+ multiple per line</td></tr>
+<tr><td>map</td><td>kick everyone off the server and start a new level</td>=
+</tr>
+<tr><td>maps</td><td>list information about available maps</td></tr>
+<tr><td>maxplayers</td><td>sets limit on how many players (or bots) may be =
+connected to the server at once</td></tr>
+<tr><td>memlist</td><td>prints memory pool information (or if used as memli=
+st 5 lists individual allocations of 5K or larger, 0 lists all allocations)=
+</td></tr>
+<tr><td>memstats</td><td>prints memory system statistics</td></tr>
+<tr><td>menu_credits</td><td>open the credits menu</td></tr>
+<tr><td>menu_fallback</td><td>switch to engine menu (unload menu.dat)</td><=
+/tr>
+<tr><td>menu_keys</td><td>open the key binding menu</td></tr>
+<tr><td>menu_load</td><td>open the loadgame menu</td></tr>
+<tr><td>menu_main</td><td>open the main menu</td></tr>
+<tr><td>menu_multiplayer</td><td>open the multiplayer menu</td></tr>
+<tr><td>menu_options</td><td>open the options menu</td></tr>
+<tr><td>menu_options_colorcontrol</td><td>open the color control menu</td><=
+/tr>
+<tr><td>menu_options_effects</td><td>open the effects options menu</td></tr=
+>
+<tr><td>menu_options_graphics</td><td>open the graphics options menu</td></=
+tr>
+<tr><td>menu_quit</td><td>open the quit menu</td></tr>
+<tr><td>menu_reset</td><td>open the reset to defaults menu</td></tr>
+<tr><td>menu_restart</td><td>restart menu system (reloads menu.dat</td></tr=
+>
+<tr><td>menu_save</td><td>open the savegame menu</td></tr>
+<tr><td>menu_setup</td><td>open the player setup menu</td></tr>
+<tr><td>menu_singleplayer</td><td>open the singleplayer menu</td></tr>
+<tr><td>menu_transfusion_episode</td><td>open the transfusion episode selec=
+t menu</td></tr>
+<tr><td>menu_transfusion_skill</td><td>open the transfusion skill select me=
+nu</td></tr>
+<tr><td>menu_video</td><td>open the video options menu</td></tr>
+<tr><td>messagemode</td><td>input a chat message to say to everyone</td></t=
+r>
+<tr><td>messagemode2</td><td>input a chat message to say to only your team<=
+/td></tr>
+<tr><td>modellist</td><td>prints a list of loaded models</td></tr>
+<tr><td>modelprecache</td><td>load a model</td></tr>
+<tr><td>name</td><td>change your player name</td></tr>
+<tr><td>net_slist</td><td>query dp master servers and print all server info=
+rmation</td></tr>
+<tr><td>net_slistqw</td><td>query qw master servers and print all server in=
+formation</td></tr>
+<tr><td>net_stats</td><td>print network statistics</td></tr>
+<tr><td>nextul</td><td>sends next fragment of current upload buffer (screen=
+shot for example)</td></tr>
+<tr><td>noclip</td><td>noclip mode (flight without collisions, move through=
+ walls)</td></tr>
+<tr><td>notarget</td><td>notarget mode (monsters do not see you)</td></tr>
+<tr><td>packet</td><td>send a packet to the specified address:port containi=
+ng a text string</td></tr>
+<tr><td>path</td><td>print searchpath (game directories and archives)</td><=
+/tr>
+<tr><td>pause</td><td>pause the game (if the server allows pausing)</td></t=
+r>
+<tr><td>pausedemo</td><td>pause demo playback (can also safely pause demo r=
+ecording if using QUAKE, QUAKEDP or NEHAHRAMOVIE protocol, useful for makin=
+g movies)</td></tr>
+<tr><td>ping</td><td>print ping times of all players on the server</td></tr=
+>
+<tr><td>pingplreport</td><td>command sent by server containing client ping =
+and packet loss values for scoreboard, triggered by pings command from clie=
+nt (not used by QW servers)</td></tr>
+<tr><td>pings</td><td>command sent by clients to request updated ping and p=
+acketloss of players on scoreboard (originally from QW, but also used on NQ=
+ servers)</td></tr>
+<tr><td>play</td><td>play a sound at your current location (not heard by an=
+yone else)</td></tr>
+<tr><td>play2</td><td>play a sound globally throughout the level (not heard=
+ by anyone else)</td></tr>
+<tr><td>playdemo</td><td>watch a demo file</td></tr>
+<tr><td>playermodel</td><td>change your player model</td></tr>
+<tr><td>playerskin</td><td>change your player skin number</td></tr>
+<tr><td>playvideo</td><td>play a .dpv video file</td></tr>
+<tr><td>playvol</td><td>play a sound at the specified volume level at your =
+current location (not heard by anyone else)</td></tr>
+<tr><td>pmodel</td><td>change your player model choice (Nehahra specific)</=
+td></tr>
+<tr><td>pointfile</td><td>display point file produced by qbsp when a leak w=
+as detected in the map (a line leading through the leak hole, to an entity =
+inside the level)</td></tr>
+<tr><td>prespawn</td><td>signon 1 (client acknowledges that server informat=
+ion has been received)</td></tr>
+<tr><td>prvm_edict</td><td>print all data about an entity number in the sel=
+ected VM (server, client, menu)</td></tr>
+<tr><td>prvm_edictcount</td><td>prints number of active entities in the sel=
+ected VM (server, client, menu)</td></tr>
+<tr><td>prvm_edicts</td><td>set a property on an entity number in the selec=
+ted VM (server, client, menu)</td></tr>
+<tr><td>prvm_edictset</td><td>changes value of a specified property of a sp=
+ecified entity in the selected VM (server, client, menu)</td></tr>
+<tr><td>prvm_fields</td><td>prints usage statistics on properties (how many=
+ entities have non-zero values) in the selected VM (server, client, menu)</=
+td></tr>
+<tr><td>prvm_global</td><td>prints value of a specified global variable in =
+the selected VM (server, client, menu)</td></tr>
+<tr><td>prvm_globals</td><td>prints all global variables in the selected VM=
+ (server, client, menu)</td></tr>
+<tr><td>prvm_globalset</td><td>sets value of a specified global variable in=
+ the selected VM (server, client, menu)</td></tr>
+<tr><td>prvm_printfunction</td><td>prints a disassembly (QuakeC instruction=
+s) of the specified function in the selected VM (server, client, menu)</td>=
+</tr>
+<tr><td>prvm_profile</td><td>prints execution statistics about the most use=
+d QuakeC functions in the selected VM (server, client, menu)</td></tr>
+<tr><td>quit</td><td>quit the game</td></tr>
+<tr><td>r_editlights_clear</td><td>removes all world lights (let there be d=
+arkness!)</td></tr>
+<tr><td>r_editlights_copyinfo</td><td>store a copy of all properties (excep=
+t origin) of the selected light</td></tr>
+<tr><td>r_editlights_edit</td><td>changes a property on the selected light<=
+/td></tr>
+<tr><td>r_editlights_editall</td><td>changes a property on ALL lights at on=
+ce (tip: use radiusscale and colorscale to alter these properties)</td></tr=
+>
+<tr><td>r_editlights_help</td><td>prints documentation on console commands =
+and variables in rtlight editing system</td></tr>
+<tr><td>r_editlights_importlightentitiesfrommap</td><td>load lights from .e=
+nt file or map entities (ignoring .rtlights or .lights file)</td></tr>
+<tr><td>r_editlights_importlightsfile</td><td>load lights from .lights file=
+ (ignoring .rtlights or .ent files and map entities)</td></tr>
+<tr><td>r_editlights_pasteinfo</td><td>apply the stored properties onto the=
+ selected light (making it exactly identical except for origin)</td></tr>
+<tr><td>r_editlights_reload</td><td>reloads rtlights file (or imports from =
+.lights file or .ent file or the map itself)</td></tr>
+<tr><td>r_editlights_remove</td><td>remove selected light</td></tr>
+<tr><td>r_editlights_save</td><td>save .rtlights file for current level</td=
+></tr>
+<tr><td>r_editlights_spawn</td><td>creates a light with default properties =
+(let there be light!)</td></tr>
+<tr><td>r_editlights_togglecorona</td><td>toggle on/off the corona option o=
+n the selected light</td></tr>
+<tr><td>r_editlights_toggleshadow</td><td>toggle on/off the shadow option o=
+n the selected light</td></tr>
+<tr><td>r_glsl_restart</td><td>unloads GLSL shaders, they will then be relo=
+aded as needed</td></tr>
+<tr><td>r_listmaptextures</td><td>list all textures used by the current map=
+</td></tr>
+<tr><td>r_replacemaptexture</td><td>override a map texture for testing purp=
+oses</td></tr>
+<tr><td>r_restart</td><td>restarts renderer</td></tr>
+<tr><td>r_shadow_help</td><td>prints documentation on console commands and =
+variables used by realtime lighting and shadowing system</td></tr>
+<tr><td>r_texturestats</td><td>print information about all loaded textures =
+and some statistics</td></tr>
+<tr><td>rate</td><td>change your network connection speed</td></tr>
+<tr><td>rcon</td><td>sends a command to the server console (if your rcon_pa=
+ssword matches the server's rcon_password), or to the address specified by =
+rcon_address when not connected (again rcon_password must match the server'=
+s)</td></tr>
+<tr><td>reconnect</td><td>reconnect to the last server you were on, or rese=
+ts a quakeworld connection (do not use if currently playing on a netquake s=
+erver)</td></tr>
+<tr><td>record</td><td>record a demo</td></tr>
+<tr><td>restart</td><td>restart current level</td></tr>
+<tr><td>save</td><td>save the game to a file</td></tr>
+<tr><td>saveconfig</td><td>save settings to config.cfg immediately (also au=
+tomatic when quitting)</td></tr>
+<tr><td>say</td><td>send a chat message to everyone on the server</td></tr>
+<tr><td>say_team</td><td>send a chat message to your team on the server</td=
+></tr>
+<tr><td>screenshot</td><td>takes a screenshot of the next rendered frame</t=
+d></tr>
+<tr><td>sendcvar</td><td>sends the value of a cvar to the server as a sentc=
+var command, for use by QuakeC</td></tr>
+<tr><td>set</td><td>create or change the value of a console variable</td></=
+tr>
+<tr><td>seta</td><td>create or change the value of a console variable that =
+will be saved to config.cfg</td></tr>
+<tr><td>setinfo</td><td>modifies your userinfo</td></tr>
+<tr><td>sizedown</td><td>decrease view size (decreases viewsize cvar)</td><=
+/tr>
+<tr><td>sizeup</td><td>increase view size (increases viewsize cvar)</td></t=
+r>
+<tr><td>skins</td><td>downloads missing qw skins from server</td></tr>
+<tr><td>snd_reload</td><td>reload all sound files</td></tr>
+<tr><td>snd_restart</td><td>restart sound system</td></tr>
+<tr><td>soundinfo</td><td>print sound system information (such as channels =
+and speed)</td></tr>
+<tr><td>soundlist</td><td>list loaded sounds</td></tr>
+<tr><td>spawn</td><td>signon 2 (client has sent player information, and is =
+asking server to send scoreboard rankings)</td></tr>
+<tr><td>startdemos</td><td>start playing back the selected demos sequential=
+ly (used at end of startup script)</td></tr>
+<tr><td>status</td><td>print server status information</td></tr>
+<tr><td>stop</td><td>stop recording or playing a demo</td></tr>
+<tr><td>stopdemo</td><td>stop playing or recording demo (like stop command)=
+ and return to looping demos</td></tr>
+<tr><td>stopdownload</td><td>terminates a download</td></tr>
+<tr><td>stopsound</td><td>silence</td></tr>
+<tr><td>stopul</td><td>aborts current upload (screenshot for example)</td><=
+/tr>
+<tr><td>stopvideo</td><td>stop playing a .dpv video file</td></tr>
+<tr><td>stuffcmds</td><td>execute commandline parameters (must be present i=
+n quake.rc script)</td></tr>
+<tr><td>sv_areastats</td><td>prints statistics on entity culling during col=
+lision traces</td></tr>
+<tr><td>sv_saveentfile</td><td>save map entities to .ent file (to allow ext=
+ernal editing)</td></tr>
+<tr><td>sv_startdownload</td><td>begins sending a file to the client (netwo=
+rk protocol use only)</td></tr>
+<tr><td>tell</td><td>send a chat message to only one person on the server</=
+td></tr>
+<tr><td>timedemo</td><td>play back a demo as fast as possible and save stat=
+istics to benchmark.log</td></tr>
+<tr><td>timerefresh</td><td>turn quickly and print rendering statistcs</td>=
+</tr>
+<tr><td>toggle</td><td>toggles a console variable's values (use for more in=
+fo)</td></tr>
+<tr><td>toggleconsole</td><td>opens or closes the console</td></tr>
+<tr><td>togglemenu</td><td>opens or closes menu</td></tr>
+<tr><td>topcolor</td><td>QW command to set top color without changing botto=
+m color</td></tr>
+<tr><td>unbind</td><td>removes a command on the specified key in bindmap 0<=
+/td></tr>
+<tr><td>unbindall</td><td>removes all commands from all keys in all bindmap=
+s (leaving only shift-escape and escape)</td></tr>
+<tr><td>user</td><td>prints additional information about a player number or=
+ name on the scoreboard</td></tr>
+<tr><td>users</td><td>prints additional information about all players on th=
+e scoreboard</td></tr>
+<tr><td>v_cshift</td><td>sets tint color of view</td></tr>
+<tr><td>version</td><td>print engine version</td></tr>
+<tr><td>vid_restart</td><td>restarts video system (closes and reopens the w=
+indow, restarts renderer)</td></tr>
+<tr><td>viewframe</td><td>change animation frame of viewthing entity in cur=
+rent level</td></tr>
+<tr><td>viewmodel</td><td>change model of viewthing entity in current level=
+</td></tr>
+<tr><td>viewnext</td><td>change to next animation frame of viewthing entity=
+ in current level</td></tr>
+<tr><td>viewprev</td><td>change to previous animation frame of viewthing en=
+tity in current level</td></tr>
+<tr><td>wait</td><td>make script execution wait for next rendered frame</td=
+></tr>
+</tbody></table>
+
+
+
+<a name=3D"ConsoleFeatures"></a>
+<h2>Console features</h2>
+<p>This documentation provided by divverent.</p>
+<p>The console does the following preprocessing:</p>
+<ul>
+<li>$$ is transformed to a single dollar sign.</li>
+<li>$var or ${var} are expanded to the contents of the named cvar, with quo=
+tation marks and backslashes quoted so it can safely be used inside quotati=
+on marks (and it should always be used that way)</li>
+<li>${var asis} inserts the cvar value as is, without doing this quoting</l=
+i>
+<li>prefix the cvar name with a dollar sign to do indirection; for example,=
+ if $x has the value timelimit, ${$x} will return the value of $timelimit</=
+li>
+<li>when expanding an alias, the special variable name * refers to all alia=
+s parameters, and a number refers to that numbered alias parameter, where t=
+he name of the alias is $0, the first parameter is $1 and so on</li>
+</ul>
+
+<p>Note: when expanding an alias, cvar expansion is done in the SAME step a=
+s alias expansion so that alias parameters or cvar values containing dollar=
+ signs have no unwanted bad side effects. However, this needs to be account=
+ed for when writing complex aliases. For example,<br>
+<code>alias foo "set x NEW; echo $x"</code><br>
+actually expands to<br>
+<code>"set x NEW; echo OLD"</code><br>
+and will print OLD! To work around this, use a second alias:<br>
+<code>
+alias foo "set x NEW; foo2"<br>
+alias foo2 "echo $x"
+</code>
+</p>
+
+<p>Also note: lines starting with alias are exempt from cvar expansion.</p>
+
+<p>If you want cvar expansion, write "alias" instead:<br>
+<code>
+set x 1<br>
+alias foo "echo $x"<br>
+"alias" bar "echo $x"<br>
+set x 2
+</code>
+</p>
+
+<p>foo will print 2, because the variable $x will be expanded when the alia=
+s gets expanded. bar will print 1, because the variable $x was expanded at =
+definition time. foo can be equivalently defined as:<br>
+<code>"alias" foo "echo $$x"</code><br>
+because at definition time, $$ will get replaced to a single $.</p>
+
+
+
+<a name=3D"HowToInstallQuake_Windows"></a>
+<h2>How to install Quake on Windows</h2>
+<p>All that DarkPlaces needs from the Quake CD is pak files (be sure not to=
+ copy opengl32.dll from the Quake CD, it will not work with DarkPlaces!), w=
+ith this in mind, all you need to do is make a Quake directory, extract the=
+ darkplaces engine zip to that directory, then make a quake/id1 directory, =
+and put the pak0.pak and pak1.pak from your Quake CD into the quake/id1 dir=
+ectory, then all should be well.</p>
+
+<h3>How to deal with a DOS Quake CD on Windows</h3>
+<p>Try to use the DOS Quake installer if you can, use DOSBox if necessary t=
+o run the installer, then copy the pak0.pak and pak1.pak to your id1 direct=
+ory in the darkplaces installation.  ( http://dosbox.sourceforge.net )</p>
+
+<h3>How to deal with a WinQuake CD on Windows</h3>
+<p>Copy the D:\Data\id1\pak0.pak and pak1.pak to your id1 directory.</p>
+
+<h3>How to deal with a Linux Quake CD on Windows</h3>
+<p>Find an archiver (perhaps 7zip or winrar) that can extract files from rp=
+m archives, locate the pak files and copy them to your id1 directory.</p>
+
+
+
+<a name=3D"HowToInstallQuake_Linux"></a>
+<h2>How to install Quake on Linux</h2>
+<p>All that DarkPlaces needs from the Quake CD is pak files, with this in m=
+ind, all you need to do is make a ~/quake directory, extract the darkplaces=
+ engine zip to that directory, then make a quake/id1 directory, and put the=
+ pak0.pak and pak1.pak from your Quake CD into the quake/id1 directory, the=
+n all should be well, you will probably also want to make a ~/bin/darkplace=
+s script containing the following text:</p>
+<code>
+#!/bin/sh<br>
+cd ~/quake<br>
+./darkplaces-sdl $*<br>
+</code>
+<p>Then do chmod +x ~/bin/darkplaces</p>
+
+<p>For more information on Quake installation on Linux see <a href=3D"http:=
+//www.tldp.org/HOWTO/Quake-HOWTO.html">the Linux Quake How To</a></p>
+
+<h3>How to deal with a DOS Quake CD on Linux</h3>
+<code>
+cat /media/cdrom/resource.001 /media/cdrom/resource.002 &gt;quake.lha<br>
+unlha x quake.lha<br>
+</code>
+<p>If you can't get unlha or lha for your distribution, try using DOSBox to=
+ run the Quake installer.</p>
+
+<h3>How to deal with a WinQuake CD on Linux</h3>
+<p>Copy the /media/cdrom/data/id1/pak*.pak to your id1 directory.</p>
+
+<h3>How to deal with a Linux Quake CD on Linux</h3>
+<code>
+mkdir temp<br>
+cd temp<br>
+# in the following line replace quake.rpm with a correct rpm filename<br>
+cat /media/cdrom/quake.rpm | rpm2cpio | cpio -i<br>
+</code>
+<p>Now you should have a mess of subdirectories, locate the pak files and c=
+opy to your id1 directory.</p>
+<p>Alternatively if you have an rpm-based distribution you could install th=
+e rpm, but it is easier to maintain your ~/quake directory than /usr/share/=
+games/quake so you may want to copy the id1/pak*.pak from there and uninsta=
+ll the rpm.</p>
+
+
+
+<a name=3D"HowToInstallQuake_MacOSX"></a>
+<h2>How to install Quake on Mac OS X</h2>
+<p>All that DarkPlaces needs from the Quake CD is pak files, with this in m=
+ind, make a folder named Quake, drag the Darkplaces.app into this Quake fol=
+der, make a folder inside the Quake folder (alongside Darkplaces) named id1=
+, and put the pak0.pak and pak1.pak from your Quake CD into the quake/id1 d=
+irectory, then all should be well, simply run the Darkplaces app</p>
+
+<h3>How to deal with a DOS Quake CD on Mac OS X</h3>
+<p>Unknown.  Linux solution may work if you can get hold of lha, otherwise =
+use DOSBox to run the Quake installer.</p>
+
+<h3>How to deal with a WinQuake CD on Mac OS X</h3>
+<p>Find the data folder on the cdrom and copy the data/id1/pak*.pak files t=
+o your id1 folder.</p>
+
+<h3>How to deal with a Linux Quake CD on Mac OS X</h3>
+<p>Unknown.  If you can get hold of rpm2cpio and cpio you should be able to=
+ follow the Linux method.</p>
+
+
+
+<a name=3D"ThanksTo"></a>
+<h2>Thanks to</h2>
+<ul>
+<li>David Cristian for contributing the mod browser menu.</li>
+<li>Rudolf 'divverent' Polzer for contributions related to Nexuiz.</li>
+<li>Dresk for contributing modding features.</li>
+<li>SavageX for maintaining the "DarkPlaces bugs affecting Nexuiz" wiki pag=
+e.</li>
+<li>Tomaz for adding features, fixing many bugs, and being generally helpfu=
+l.</li>
+<li>Andreas 'Black' Kirsch for much work on the QuakeC VM (menu.dat, someda=
+y clprogs.dat) and other contributions.</li>
+<li>Mathieu 'Elric' Olivier for much work on the sound engine (especially t=
+he Ogg vorbis support)</li>
+<li>MoALTz for some bugfixes and cleanups</li>
+<li>Joseph Caporale for adding 5 mouse button support.</li>
+<li>KGB|romi for his contributions to the Quake community, including his rt=
+lights project and many suggestions, his id1 romi_rtlights.pk3 is included =
+in darkplaces mod releases.</li>
+<li>Zombie for making great levels and general DarkPlaces publicity.</li>
+<li>FrikaC for FrikQCC and FrikBot and general community support.</li>
+<li>Transfusion Project for recreating Blood in the world of Quake.</li>
+<li>de-we for the great icons.</li>
+<li>|Rain| for running my favorite anynet IRC server and his bot feh (which=
+ although a bit antisocial never seems to grow tired of being my calculator=
+).</li>
+<li>VorteX for the DP_QC_GETTAGINFO extension.</li>
+<li>Ludwig Nussel for the ~/.games/darkplaces/ user directory support on no=
+n-Windows platforms (allowing games to be installed in a non-writable syste=
+m location as is the standard on UNIX but still save configs to the user's =
+home directory).</li>
+</ul>
+
+
+
+
+
+</body></html>
+------MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://icculus.org/twilight/darkplaces/style.css
+
+@charset "windows-1252";
+
+body { color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); }
+
+h1, h2, h3, h4 { font-weight: 900; border-bottom: 1px solid rgb(255, 144, 0=
+); padding-left: 4px; background-color: rgb(64, 0, 0); }
+
+img { border: none; border-collapse: collapse; }
+
+a { color: rgb(255, 144, 0); text-decoration: none; }
+
+a:hover { color: rgb(255, 255, 0); }
+
+a:active { color: rgb(255, 255, 0); }
+
+code { font-weight: 900; }
+------MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.icculus.org/icculus-org.png
+
+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
+AzI6abhbAiq6AAAAAElFTkSuQmCC
+------MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.w3.org/Icons/valid-xhtml10
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAADAFBMVEUBAAAIBgMMCQQLCwsSDgYX
+EgkaFQoUFBQcHBwlHQ4rIhEwJhM2KxU7Lxc9MBgjIyMoKCg0MzI7OztBNBpOPh5OSz9TQiFeSyVk
+UChqVCpuWCx1Rzl0XC5+ZDFOTk5ST0tWUk1VVVVcXFxqXUplZWVra2twcHB7e3sAWpwIX58JYJ8O
+Y6ERZaIVaKQaa6Yebaghb6klcqopdawxea82fbE4frI+grRFhrZMi7pVkb1alL9dlsBkm8NoncRt
+ocZ0pcl8qsyWBAOZAACcCASIIBmdNiegDge3PB6mPiqBZzODaDSKbjaOcTiUdjuXeDyaez26QiG/
+TCaAeWihclPATifBUCjIXy/QbzfWej3Yfj+KgWWjgkGui0WxjUa0gVi3kkm6lEq+mEyjkmuzn2e7
+pnLFnU7eikXOpFHRp1PVqlXarlfesVjjlUrmm03poFDtqVTitFrmuFzqu13ywWD7xWL+y2WDg4OX
+l5eYmJippZ61rZisrKy0tLS/v7+Crs6FsNCLtNKQt9SWu9aYvNebvtifwdqjw9uox92ryd6yzeG2
+0OPCwsLMzMzU1NTA1ufG2ujN3+zT4+7d6fL/7Mbn5+fs7Ozl7vXp8fbu9Pj09PTy9/r1+Pv+/v7M
+zMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAADn4rtgAAAAnnRSTlP/////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////AD6H4/gAAAABYktHRP+lB/LFAAAACXBIWXMAAABIAAAASABGyWs+AAADSUlEQVRI
+x+2WaU8TURSGzyCLQEUxiFYtCEo8Da3sYglQbDUaluISV6pYFdsyop1Or8ElSgg2RSjgArSZ63/1
+3JkOXRBZgn7yTXpmyzwz857lFhb3XW9/CsEi317f2c71/OnZ/+C9gSdDKmNySI2GorQNxiaDpFA4
+FgrS+WgoxFhwck/gMTjBwmCJ+WCYMQso5SBUoQCcZKwGgClg2QSOt7jp7pnWGQFJ2e0tpFYX5+k3
+TUn+QTOsqAV/hRRmJngiYAVrYILAkipT+C34GzqJ+AW7BDiBhga4VgdwIFmdNMBKMcAQI3Ctz1cO
+CmPD4hEKVBX5TpdYfg/m7bhC0YHrFHvQtbY2h840fw9Hzh8tO7CaSZ6V3k2AdWXBNdaKosGtwG78
+SLED4xSd+I1rbWK37ii5cO58pirCUglYBXhIjVlywWGQoluBl7CT83VE8nUZ28lu3ZUycUlLZ8CV
+UrgGnpgeR7JgZrUxHVzh9/tjAuzxbFRFM7nwGbGZ8wF083UHLlPqDuZWxSAZrBSXqmbyGBuBEQNM
+0sFCUQJf8QiyAXbRp7uwA5fI7iXei9ifotzlgiMy3R+NqKpMRiv6gUwVzfTAlAiLyUJkxVWPUAYc
+R5fWfCGB7jV00GOciJ0an95T5133GDLAKXTMY1/K3j6HPeJ42YEJvrAX8M0M1+y8LvJhnnejURmc
+92HvH2aFGtuWa4I/Ido1qgbElH48j235YNkiwbhxc6QKpJN56NiN18bOnQ2uCV5BvCRaEC8aqAS2
+rBp76bSRPFutCT4No8chkMu95vG+ynIve3KHUAvO6i04w2d7dCu6Fwxy00LGCpsJrixlQbAVfL/3
+5Qb3VN5068M1vQW/UrG5U3EHxrXGH4IrJTfAxluqUMWicCjLva/zvC8Mf72388fmfIeIS61UIU60
+o2jFxbKGxsMwzQvfuKScyTREcxz2ZOV9XDCPtY/6ZoB+X/udzl6Rw2RDWfV7ngceonFxXIqMgj83
+eXey3Fe7HfRh0bAlondZQJKgXM2rsrsmd2rXK4j6ZHx8PMAmhM/y2CO1oH7vmdx9X0wfZLj7v0q/
+8Orcv7D8T039s/8VH7bVu2c718NbJrhuBzq2leo3nTlTX62DfwGZkKiGotSUXQAAAABJRU5ErkJg
+gg==
+------MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://jigsaw.w3.org/css-validator/images/vcss
+
+R0lGODlhWAAfAMYAAP///3OUxwxHnTZkrlR8ut/m8u7u7kxMTK6urp2dnb6+vrHD4KG32ZKr0yws
+LAAAAH19fRwcHO7y+CFVpsHP5o2NjQwMDBdNomSIwQtEnY6n0s7Ozl1dXdDb7CZZqIOfzUVwtDw8
+PGx6kW1tbczMzP/MZmOlxgBmmRh7rUqUvefv90pKSr29xpmZmbXW54S11jMzM4SEhCMcDg8MBlqc
+vWZmZu+/X4ltNjwwGG1XK9+yWa+MRkw8HsCZTM+lUltIJCwjEQwJBJx8PjGMtTk5ORwWC8OcTuu8
+XpkAAGYzAPTDYZUAAMyZM7mUSuG0Wt6xWHtzZiggEABmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBm
+mQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBm
+mQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmSH+
+ClZhbGlkIENTUyEAIfkEAQAAfwAsAAAAAFgAHwAAB/6AJIKDhIWGh4iJiouMhX+PjyQAk5SVlpeY
+mSWbnJ2en6ChoEdGK5CRmamqqaKtrq8lpKankqu2trC5urGlp3+1t8GYu8Stsr7AwsqTxc2fx7TL
+0gDO1ZvQkLUBAgOUBAIElQUC5OXkkwYHBwgACQqU1tXYqAAL5AWTDOeUDebl3QYcPBgIIQIEePGa
+zftFiRyDSRLILfAmYAIFCtsEUABQ4YGFAxEGJkCYkNhCYN/CTbogAEPDDBoASGCp0oGFDZM4RKhU
+sthJSvouTOpAzsMkewIkAPhwb9KDCpQMvCNp4waOqzl0cNrB4yqPHpx8/PC6Q9cxJNkojRMwkSm5
+Dv4AMHADsPYDpQcGWJWwAWRg3wdBtPYYGATHQLA6ggA2/EBILlJJkEimN2mAgAAALLNsAMCDAM7f
+BHjYCMCBqk03APvYa/hHidRBylp1nPrBjRI7cDiGdeSG5N8MKTH1EPEyN6IC4IIwtzHE6RI8HuQA
+tWMg4R82SviwPpDHali+f/9OhpzpgLqiK1FgCYLj8x/SOfW44djHjRw4inQvoePG2L9AwCKEeMAl
+AwBLLNllGTkuVSJXUjjpJQRg9fU1nWHTQfcADq89wMMmOQD2yoAEohUcJQ8mB0BGbFmij0arcAIf
+d0BkVx13D5Tlg2LcZfjabp2QSGBalSAlFADICf5wyYsiXCIVSbjh9wOQ2lmFww1gbdJfVzmUtQmJ
+QijBiZDiRVNJcQ0eCM6KHuATFzkJjFQJByNA2ROZSIiJJxJLIHPJNxNNItdDyw1AgVvtRQAVAOk8
+cBAzPW3CRIlI7InELERW0o9S+QiATwEsmQMXAg9EEMJAptlZkqUlNoEpZWqpBFE3R4XmQaAAIBDS
+AxzkpeqqlIrnRC9mWuKmWpZIAFcwkXoyabBK/DSNMs06S6mY0k7LbLWdPPubmLy8eqK2uHDbyRPf
+cpItuTGae+4N4F5DbKbsPueuKD+xoO++/Pbr77//GiHwwAQXbPDBCB8cAxTikrDCwxBHLPHEFA1X
+bPHFGGf8MBFR+BIIACH5BAEKAH8ALAEAAQAkABwAAAf+gACCg4SFhoeIiYqLjI2Oj5CRkpOUiAEC
+A4MEAgSEBQKgoaCCBgcHCAAJCoULoAWCDKODDaKhmQYOD7oQERCGoAyCEqALmgITFBSXAhQAFQ8W
+BxG6CYabnYIXAhiDAhkaABLa2A4WG4IcEYexF4IdoB6CrQISAB+ugg8Vgwarhp8Cit0D1QEABkwA
+AH4Y9MBAowECAgCAqK0BAA8CLG4S4KEZAAeO7nkYFhHTOwEFQYhqFsLRyXsDFHIkREEbCGePtGlb
+CBEUN0IH6Z1zFBQlgGUBC8ViBmleOwAnBRhaKsJQP0QkfwIYd9TDK4OgElQjxGFEok3FBB0MpnIA
+hYE8NyPsA1DqgS9EtOrBEvCqgDZRBRE8iBBCF8hEBbAJyyRvo4e0ABBMe8DBoaKvgzALK1ips+fP
+oEOLDh0IADs=
+------MultipartBoundary--7dlWxAFW4F2D7ej3OaJP01hJ8WOSab998yASvD9bTl------
