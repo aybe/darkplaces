@@ -805,6 +805,12 @@ static void r_textures_start(void)
 		CHECKGLERROR
 		qglPixelStorei(GL_UNPACK_ALIGNMENT, 1);CHECKGLERROR
 		qglPixelStorei(GL_PACK_ALIGNMENT, 1);CHECKGLERROR
+
+		// update texture filter mode
+		char vabuf[1024];
+		va(vabuf, sizeof vabuf, "%s %s", "GL_TEXTUREMODE", gl_texture_filter.string);
+		Cbuf_AddText(vabuf);
+
 		break;
 	case RENDERPATH_D3D9:
 		break;

@@ -2846,9 +2846,9 @@ video_resolution_t video_resolutions_hardcoded[] =
 // this is the number of the default mode (640x480) in the list above
 int video_resolutions_hardcoded_count = sizeof(video_resolutions_hardcoded) / sizeof(*video_resolutions_hardcoded) - 1;
 
-#define VIDEO_ITEMS 11
+#define VIDEO_ITEMS 12
 static int video_cursor = 0;
-static int video_cursor_table[VIDEO_ITEMS] = {68, 88, 96, 104, 112, 120, 128, 136, 144, 152, 168};
+static int video_cursor_table[VIDEO_ITEMS] = {68, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 176};
 static int menu_video_resolution;
 
 video_resolution_t *video_resolutions;
@@ -2857,6 +2857,19 @@ int video_resolutions_count;
 static video_resolution_t *menu_video_resolutions;
 static int menu_video_resolutions_count;
 static qboolean menu_video_resolutions_forfullscreen;
+
+#define TEXTURE_FILTERS 6
+#define TEXTURE_FILTER_INVALID -1
+
+static const char * texture_filters[TEXTURE_FILTERS] =
+{
+	"GL_NEAREST",
+	"GL_NEAREST_MIPMAP_NEAREST",
+	"GL_NEAREST_MIPMAP_LINEAR",
+	"GL_LINEAR",
+	"GL_LINEAR_MIPMAP_NEAREST",
+	"GL_LINEAR_MIPMAP_LINEAR"
+};
 
 static void M_Menu_Video_FindResolution(int w, int h, float a)
 {
@@ -2990,6 +3003,10 @@ static void M_Video_Draw (void)
 	M_DrawCheckbox(220, video_cursor_table[t], gl_texturecompression.integer);
 	t++;
 
+	M_ItemPrint(16, video_cursor_table[t], "   Texture Filtering", true);
+	M_Print(220, video_cursor_table[t], gl_texture_filter.string);
+	t++;
+
 	// "Apply" button
 	M_Print(220, video_cursor_table[t], "Apply");
 	t++;
@@ -3039,6 +3056,30 @@ static void M_Menu_Video_AdjustSliders (int dir)
 		Cvar_SetValueQuick (&gl_picmip, bound(0, gl_picmip.value - dir, 3));
 	else if (video_cursor == t++)
 		Cvar_SetValueQuick (&gl_texturecompression, !gl_texturecompression.integer);
+	else if (video_cursor == t++)
+	{
+		int filter_index = TEXTURE_FILTER_INVALID;
+		
+		for (size_t i = 0; i < TEXTURE_FILTERS; i++)
+		{
+			if (!strcmp(gl_texture_filter.string, texture_filters[i]))
+			{
+				filter_index = i;
+				break;
+			}
+		}
+
+		if (filter_index != TEXTURE_FILTER_INVALID)
+		{
+			filter_index = bound(0, filter_index + dir, TEXTURE_FILTERS - 1);
+			const char * texture_mode_name = texture_filters[filter_index];
+			Cvar_SetQuick(&gl_texture_filter, texture_mode_name);
+		}
+		else
+		{
+			Con_DPrintf("specified texture filtering mode is invalid.");
+		}
+	}
 }
 
 
