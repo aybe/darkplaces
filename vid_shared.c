@@ -131,8 +131,8 @@ cvar_t joy_x360_deadzoneroll = {CVAR_SAVE, "joy_x360_deadzoneroll", "0.266", "de
 cvar_t joy_x360_sensitivityforward = {CVAR_SAVE, "joy_x360_sensitivityforward", "1", "movement multiplier"};
 cvar_t joy_x360_sensitivityside = {CVAR_SAVE, "joy_x360_sensitivityside", "1", "movement multiplier"};
 cvar_t joy_x360_sensitivityup = {CVAR_SAVE, "joy_x360_sensitivityup", "1", "movement multiplier"};
-cvar_t joy_x360_sensitivitypitch = {CVAR_SAVE, "joy_x360_sensitivitypitch", "-1", "movement multiplier"};
-cvar_t joy_x360_sensitivityyaw = {CVAR_SAVE, "joy_x360_sensitivityyaw", "-1", "movement multiplier"};
+cvar_t joy_x360_sensitivitypitch = {CVAR_SAVE, "joy_x360_sensitivitypitch", "1", "movement multiplier"};
+cvar_t joy_x360_sensitivityyaw = {CVAR_SAVE, "joy_x360_sensitivityyaw", "1", "movement multiplier"};
 cvar_t joy_x360_sensitivityroll = {CVAR_SAVE, "joy_x360_sensitivityroll", "1", "movement multiplier"};
 
 // cvars for DPSOFTRAST
