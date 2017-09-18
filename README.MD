@@ -26,7 +26,7 @@ https://github.com/aybe/darkplaces/releases
 
 [Microsoft DirectX SDK (June 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
 
-## Issues
+## Issues/enhancements etc
 
 See https://github.com/aybe/darkplaces/issues.
 
@@ -34,7 +34,7 @@ See https://github.com/aybe/darkplaces/issues.
 
 ### Xbox 360 Controller / Xbox One Controller
 - running was not applied
-- persistence of joy_x360_sensitivity* vars
+- persistence of joy_x360_deadzone*, joy_x360_sensitivity* vars
 
 ### Video
 - texture filtering in video options (previously you had to use console at every launch)
