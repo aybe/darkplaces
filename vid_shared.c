@@ -1430,6 +1430,14 @@ void VID_ApplyJoyState(vid_joystate_t *joystate)
 		//cl.viewangles[2]   += VID_JoyState_GetAxis(joystate, joy_axisroll.integer, joy_sensitivityroll.value, joy_deadzoneroll.value) * cl.realframetime * cl_rollspeed.value;
 	}
 
+	// adjust for speed key
+	if (in_speed.state & 1)
+	{
+		cl.cmd.forwardmove *= cl_movespeedkey.value;
+		cl.cmd.sidemove *= cl_movespeedkey.value;
+		cl.cmd.upmove *= cl_movespeedkey.value;
+	}
+
 	vid_joystate = *joystate;
 }
 
