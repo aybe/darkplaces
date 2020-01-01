@@ -10,11 +10,9 @@ https://github.com/aybe/darkplaces/releases
 
 ### For playing
 
-(you only need these for the build using SDL2)
+(for the build using SDL2)
 
-[SDL2-2.0.5-win32-x86.zip](https://www.libsdl.org/release/SDL2-2.0.5-win32-x86.zip)
-
-[SDL2-2.0.5-win32-x64.zip](https://www.libsdl.org/release/SDL2-2.0.5-win32-x64.zip)
+https://github.com/aybe/darkplaces/releases/tag/dependencies
 
 ### For development
 
