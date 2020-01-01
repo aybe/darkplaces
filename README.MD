@@ -26,6 +26,10 @@ https://github.com/aybe/darkplaces/releases
 
 [Microsoft DirectX SDK (June 2010)](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
 
+If you get error S1023 during install:
+
+https://support.microsoft.com/en-us/help/2728613/s1023-error-when-you-install-the-directx-sdk-june-2010
+
 ## Issues/enhancements etc
 
 See https://github.com/aybe/darkplaces/issues.
